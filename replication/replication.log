@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.23)  27 MAY 2021 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.23)  27 MAY 2021 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -798,16 +798,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [2] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: 06C0FA1043C56F36C2B502212228D810;596.
+(rerunfilecheck)             Checksum: 9DF1D048E4A71FB18CFFD6FAB8F078C7;728.
  ) 
 Here is how much of TeX's memory you used:
  15111 strings out of 480796
- 265087 string characters out of 5903255
- 536389 words of memory out of 5000000
+ 265133 string characters out of 5903255
+ 537481 words of memory out of 5000000
  32215 multiletter control sequences out of 15000+600000
  473231 words of font info for 75 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 70i,11n,76p,276b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 70i,11n,76p,289b,764s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmb
 x10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/l
@@ -819,7 +819,7 @@ type1/public/lm/lmri10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/f
 onts/type1/public/lm/lmri7.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-di
 st/fonts/type1/public/lm/lmri9.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texm
 f-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on replication.pdf (2 pages, 182955 bytes).
+Output written on replication.pdf (2 pages, 185313 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream

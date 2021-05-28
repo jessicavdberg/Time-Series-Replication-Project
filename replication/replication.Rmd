@@ -102,6 +102,8 @@ library(tidyverse)
 
 slowdown_dataset <- read.table("~/GitHub/Time-Series/replication/data/slowdown_dataset.txt", quote="\"", comment.char="")
 
+slowdown_dataset <- slowdown_dataset %>% rename(Date = V1, OIL = V2, YEMU = V3, CPEMU = V4, SEMU = V5, YUS= V6, CPUS = V7, SUS = V8) 
+slowdown_dataset <- slowdown_dataset[-c(131), ] 
 
 ```
 
@@ -110,8 +112,25 @@ slowdown_dataset <- read.table("~/GitHub/Time-Series/replication/data/slowdown_d
 <!-- # Start Writing here: -->
 <!-- ############################## -->
 
-# Introduction \label{Introduction}
+# Test wether variables are stationary \label{stationary}
+ 
+Variables that are included in the dataset (same order): oil, output growth, consumer inflation and short-term nominal interest rate for EU and US. 
 
+Gideon suggested I only do the replication for the US, since this will be a lot of work. 
+
+
+In order to test whether a variable is stationary, you can use a unit root test such as the Dickey-Fuller (DF) test
+
+
+```{r}
+
+library(tseries)
+
+
+
+
+
+```
 
 
 # Conclusion
