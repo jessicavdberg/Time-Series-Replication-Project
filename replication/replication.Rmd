@@ -121,15 +121,34 @@ Gideon suggested I only do the replication for the US, since this will be a lot 
 
 In order to test whether a variable is stationary, you can use a unit root test such as the Dickey-Fuller (DF) test
 
+Null hypothesis: There is a unit root 
+Alternative hypothesis: Time series is stationary 
+
+If p-values is less than 0.05, it means we can reject the null hypothesis. 
 
 ```{r}
 
+library(lubridate)
 library(tseries)
+library(ggplot2)
+library(dplyr)
 
 
+slowdown_dataset$year <- substr(slowdown_dataset$Date,1,4)
+slowdown_dataset$quarter <- substr(slowdown_dataset$Date,6,6)
 
+a <- slowdown_dataset %>% mutate(year=as.Date(paste(slowdown_dataset$year,"-01-01",sep=""))) %>% filter(quarter==1) %>%  select(year, SUS) %>% group_by(year) %>% ggplot() + geom_point(aes(x=year, y=SUS, fill=SUS)) + theme(legend.position = "none")
+a
 
+adf.test(slowdown_dataset$OIL)
+adf.test(slowdown_dataset$YUS)
+adf.test(slowdown_dataset$SUS)
+adf.test(slowdown_dataset$CPUS)
 
+pp.test(slowdown_dataset$OIL)
+pp.test(slowdown_dataset$YUS)
+pp.test(slowdown_dataset$SUS)
+pp.test(slowdown_dataset$CPUS)
 ```
 
 
