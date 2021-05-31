@@ -247,6 +247,105 @@ be a lot of work.
 In order to test whether a variable is stationary, you can use a unit
 root test such as the Dickey-Fuller (DF) test
 
+Null hypothesis: There is a unit root Alternative hypothesis: Time
+series is stationary
+
+If p-values is less than 0.05, it means we can reject the null
+hypothesis.
+
+\includegraphics{replication_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\begin{verbatim}
+## 
+##  Augmented Dickey-Fuller Test
+## 
+## data:  slowdown_dataset$OIL
+## Dickey-Fuller = -2.0358, Lag order = 5, p-value = 0.5616
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Augmented Dickey-Fuller Test
+## 
+## data:  slowdown_dataset$YUS
+## Dickey-Fuller = -1.3894, Lag order = 5, p-value = 0.8304
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Augmented Dickey-Fuller Test
+## 
+## data:  slowdown_dataset$SUS
+## Dickey-Fuller = -3.4394, Lag order = 5, p-value = 0.05113
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Augmented Dickey-Fuller Test
+## 
+## data:  slowdown_dataset$CPUS
+## Dickey-Fuller = -1.5413, Lag order = 5, p-value = 0.7672
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Phillips-Perron Unit Root Test
+## 
+## data:  slowdown_dataset$OIL
+## Dickey-Fuller Z(alpha) = -8.7804, Truncation lag parameter = 4, p-value
+## = 0.6091
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Phillips-Perron Unit Root Test
+## 
+## data:  slowdown_dataset$YUS
+## Dickey-Fuller Z(alpha) = -3.501, Truncation lag parameter = 4, p-value
+## = 0.9108
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Phillips-Perron Unit Root Test
+## 
+## data:  slowdown_dataset$SUS
+## Dickey-Fuller Z(alpha) = -11.903, Truncation lag parameter = 4, p-value
+## = 0.4288
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Phillips-Perron Unit Root Test
+## 
+## data:  slowdown_dataset$CPUS
+## Dickey-Fuller Z(alpha) = -1.0566, Truncation lag parameter = 4, p-value
+## = 0.9855
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\hypertarget{impulse-response-function}{%
+\section{Impulse response function}\label{impulse-response-function}}
+
+First thing I need to do is convert the data to a time series object in
+R. And to do this I need to create a date column.
+
+The graph below, just shows you the dataset for the US. This is nice
+because you can see the pattern all the vaaraibles follow. This is not
+in the paper but might be nice to put in under `descriptive statistics'.
+\includegraphics{replication_files/figure-latex/unnamed-chunk-2-1.pdf}
+
+\begin{verbatim}
+## NULL
+\end{verbatim}
+
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 

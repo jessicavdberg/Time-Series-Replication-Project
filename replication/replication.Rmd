@@ -151,6 +151,32 @@ pp.test(slowdown_dataset$SUS)
 pp.test(slowdown_dataset$CPUS)
 ```
 
+# Impulse response function 
+
+First thing I need to do is convert the data to a time series object in R. And to do this I need to create a date column. 
+
+The graph below, just shows you the dataset for the US. This is nice because you can see the pattern all the vaaraibles follow. This is not in the paper but might be nice to put in under 'descriptive statistics'. 
+```{r}
+library(zoo)
+library(tsibble)
+
+x <- seq(as.Date("1970/01/01"), as.Date("2002/06/30"), by ="quarter")
+slowdown_dataset$Dates <- x
+slowdown_dataset$yearq <- yearquarter(x)
+
+#This is just me checking for the date column 
+class <- class(slowdown_dataset$Dates)
+class <- class(slowdown_dataset$yearq)
+
+b <- slowdown_dataset %>% select(OIL, YUS, CPUS, SUS) %>% ts(., start=c(1970,1), frequency = 4) %>% plot(., main= "Dataset for the US")
+
+b 
+
+
+```
+
+Now that I have a nice little graph, I can continue by creating my VAR. WE first look at a simple four variable VAR. These variables are OIL, CPUS, YUS and SUS. 
+
 
 # Conclusion
 
