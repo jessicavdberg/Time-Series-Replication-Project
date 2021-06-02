@@ -112,6 +112,36 @@ slowdown_dataset <- slowdown_dataset[-c(131), ]
 <!-- # Start Writing here: -->
 <!-- ############################## -->
 
+# Introduction 
+
+In this research assignment, I replicate a research assignment by Gert Peersman (2005), a German economist, titled "What caused the early millennium slowdown? Evidence based on vector autoregressions". In this paper, Peersman (2005) uses a simple four-variable VAR (vector autogressive model) and an identification based scheme based on sign restrictions to examine the effects of a supply, demand, monetary policy and oil price shocks. Peersman (2005) uses data from the United States and Euro area. However, this assignment will only focus on analyzing shocks for the USA. Peersman (2005) concludes that the millennial slowdown is not the result of one particular shock, but a combination of them. The goal of this assignment is to replicate the results of Peersman (2005) as well as preform additional robustness test to ensure the validity of Peermans (2005) results.
+
+
+This paper will be constructed as follows. The first section will give an overview of the paper with respects to the economics, methodology and data that Peersman (2005) used. The second section will replicate the results for the US. The third section will perform robustness checks and the forth section will conclude.
+
+
+# Overview of the paper 
+## Theory 
+## Data 
+## Methodology 
+
+# Reconstructing data
+
+```{r}
+#library(dplyr)
+#class(slowdown_dataset$CPUS)
+#slowdown_dataset$p1 <- 100*log(as.numeric(slowdown_dataset$CPUS))
+#slowdown_dataset$wp <- 100*log(as.numeric(slowdown_dataset$OIL))
+
+#install.packages("lpirfs", dependencies = T)
+#install.packages("data.table")
+#library(lpirfs)
+ #slowdown_dataset %>% select(Dates, OIL, CPUS, YUS, SUS) %>% lp_lin_panel(., data_sample = FULL, shock=OIL, c_exog_data=OIL)
+
+```
+
+
+
 # Test wether variables are stationary \label{stationary}
  
 Variables that are included in the dataset (same order): oil, output growth, consumer inflation and short-term nominal interest rate for EU and US. 
@@ -234,16 +264,15 @@ Now that I have a nice little graph, I can continue by creating my VAR. WE first
 
 library(vars)
 # putting my data in a time series object
-ts_us <- slowdown_dataset %>% select(OIL, YUS, CPUS, SUS) %>% ts(., start=c(1970,1), frequency = 4)
+ts_us <- slowdown_dataset %>% select(OIL, YUS) %>% ts(., start=c(1970,1), frequency = 4)
 
 us_model <- VAR(ts_us, p=1, type = "const")
 summary(us_model)
 
-c <- irf(us_model, impulse="OIL", response = c("OIL", "YUS", "SUS", "CPUS"), n.ahead=8, ortho = FALSE, runs = 1000)
-
-c <-irf(us_model, impulse.varaible="OIL", response.variable = c("OIL", "YUS", "SUS", "CPUS"), draw.plot=TRUE)
+c <-irf(us_model, impulse.varaible="OIL", response.variable =  "YUS", draw.plot=TRUE, boot=TRUE, n.ahead=20)
 
 plot(c)
+
 
 ```
 

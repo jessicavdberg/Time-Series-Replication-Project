@@ -233,6 +233,44 @@ Multivariate GARCH \sep Kalman Filter \sep Copula \\ \vspace{0.3cm}
 
 
 
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+In this research assignment, I replicate a research assignment by Gert
+Peersman (2005), a German economist, titled ``What caused the early
+millennium slowdown? Evidence based on vector autoregressions''. In this
+paper, Peersman (2005) uses a simple four-variable VAR (vector
+autogressive model) and an identification based scheme based on sign
+restrictions to examine the effects of a supply, demand, monetary policy
+and oil price shocks. Peersman (2005) uses data from the United States
+and Euro area. However, this assignment will only focus on analyzing
+shocks for the USA. Peersman (2005) concludes that the millennial
+slowdown is not the result of one particular shock, but a combination of
+them. The goal of this assignment is to replicate the results of
+Peersman (2005) as well as preform additional robustness test to ensure
+the validity of Peermans (2005) results.
+
+This paper will be constructed as follows. The first section will give
+an overview of the paper with respects to the economics, methodology and
+data that Peersman (2005) used. The second section will replicate the
+results for the US. The third section will perform robustness checks and
+the forth section will conclude.
+
+\hypertarget{overview-of-the-paper}{%
+\section{Overview of the paper}\label{overview-of-the-paper}}
+
+\hypertarget{theory}{%
+\subsection{Theory}\label{theory}}
+
+\hypertarget{data}{%
+\subsection{Data}\label{data}}
+
+\hypertarget{methodology}{%
+\subsection{Methodology}\label{methodology}}
+
+\hypertarget{reconstructing-data}{%
+\section{Reconstructing data}\label{reconstructing-data}}
+
 \hypertarget{test-wether-variables-are-stationary}{%
 \section{\texorpdfstring{Test wether variables are stationary
 \label{stationary}}{Test wether variables are stationary }}\label{test-wether-variables-are-stationary}}
@@ -253,7 +291,7 @@ series is stationary
 If p-values is less than 0.05, it means we can reject the null
 hypothesis.
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-1-1.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-2-1.pdf}
 
 \begin{verbatim}
 ## 
@@ -365,10 +403,10 @@ I will use a VAR with lag length eual to one as specified by the paper.
 \hypertarget{var}{%
 \section{VAR}\label{var}}
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-3-1.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-3-2.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-3-3.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-3-4.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-4-1.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-4-2.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-4-3.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-4-4.pdf}
 
 \hypertarget{diagnostic-tests-and-test-statistics}{%
 \section{Diagnostic tests and Test
@@ -431,7 +469,7 @@ R. And to do this I need to create a date column.
 The graph below, just shows you the dataset for the US. This is nice
 because you can see the pattern all the vaaraibles follow. This is not
 in the paper but might be nice to put in under `descriptive statistics'.
-\includegraphics{replication_files/figure-latex/unnamed-chunk-5-1.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-6-1.pdf}
 
 \begin{verbatim}
 ## NULL
@@ -446,112 +484,64 @@ functions.
 ## 
 ## VAR Estimation Results:
 ## ========================= 
-## Endogenous variables: OIL, YUS, CPUS, SUS 
+## Endogenous variables: OIL, YUS 
 ## Deterministic variables: const 
 ## Sample size: 129 
-## Log Likelihood: -1390.997 
+## Log Likelihood: -810.799 
 ## Roots of the characteristic polynomial:
-##     1 0.9102 0.6452 0.6452
+## 0.9985 0.9184
 ## Call:
 ## VAR(y = ts_us, p = 1, type = "const")
 ## 
 ## 
 ## Estimation results for equation OIL: 
 ## ==================================== 
-## OIL = OIL.l1 + YUS.l1 + CPUS.l1 + SUS.l1 + const 
+## OIL = OIL.l1 + YUS.l1 + const 
 ## 
-##         Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1   0.91555    0.03417  26.790   <2e-16 ***
-## YUS.l1   0.54651    0.39879   1.370    0.173    
-## CPUS.l1 -0.52412    0.39871  -1.315    0.191    
-## SUS.l1  -0.03032    0.03407  -0.890    0.375    
-## const    6.81916    3.50527   1.945    0.054 .  
+##        Estimate Std. Error t value Pr(>|t|)    
+## OIL.l1  0.91767    0.03408  26.927   <2e-16 ***
+## YUS.l1  0.02448    0.03423   0.715    0.476    
+## const   4.17798    2.63385   1.586    0.115    
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## 
-## Residual standard error: 13.26 on 124 degrees of freedom
-## Multiple R-Squared: 0.8771,  Adjusted R-squared: 0.8731 
-## F-statistic: 221.2 on 4 and 124 DF,  p-value: < 2.2e-16 
+## Residual standard error: 13.3 on 126 degrees of freedom
+## Multiple R-Squared: 0.8744,  Adjusted R-squared: 0.8724 
+## F-statistic: 438.5 on 2 and 126 DF,  p-value: < 2.2e-16 
 ## 
 ## 
 ## Estimation results for equation YUS: 
 ## ==================================== 
-## YUS = OIL.l1 + YUS.l1 + CPUS.l1 + SUS.l1 + const 
-## 
-##          Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  -0.002347   0.005720  -0.410    0.682    
-## YUS.l1   0.682845   0.066743  10.231  < 2e-16 ***
-## CPUS.l1  0.317619   0.066729   4.760  5.3e-06 ***
-## SUS.l1   0.007525   0.005701   1.320    0.189    
-## const    0.330629   0.586645   0.564    0.574    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 2.219 on 124 degrees of freedom
-## Multiple R-Squared: 0.9966,  Adjusted R-squared: 0.9965 
-## F-statistic:  9047 on 4 and 124 DF,  p-value: < 2.2e-16 
-## 
-## 
-## Estimation results for equation CPUS: 
-## ===================================== 
-## CPUS = OIL.l1 + YUS.l1 + CPUS.l1 + SUS.l1 + const 
-## 
-##           Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  -4.596e-05  5.657e-04  -0.081    0.935    
-## YUS.l1   4.581e-03  6.601e-03   0.694    0.489    
-## CPUS.l1  9.954e-01  6.600e-03 150.823   <2e-16 ***
-## SUS.l1   9.405e-05  5.639e-04   0.167    0.868    
-## const    1.000e+00  5.802e-02  17.238   <2e-16 ***
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 0.2195 on 124 degrees of freedom
-## Multiple R-Squared:     1,   Adjusted R-squared:     1 
-## F-statistic: 9.279e+05 on 4 and 124 DF,  p-value: < 2.2e-16 
-## 
-## 
-## Estimation results for equation SUS: 
-## ==================================== 
-## SUS = OIL.l1 + YUS.l1 + CPUS.l1 + SUS.l1 + const 
+## YUS = OIL.l1 + YUS.l1 + const 
 ## 
 ##         Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  -0.01602    0.07181  -0.223 0.823796    
-## YUS.l1  -1.60957    0.83798  -1.921 0.057057 .  
-## CPUS.l1  1.58774    0.83780   1.895 0.060404 .  
-## SUS.l1   0.59208    0.07158   8.272 1.74e-13 ***
-## const   24.97556    7.36556   3.391 0.000935 ***
+## OIL.l1 -0.002518   0.006199  -0.406   0.6853    
+## YUS.l1  0.999285   0.006226 160.496   <2e-16 ***
+## const   1.192616   0.479075   2.489   0.0141 *  
 ## ---
 ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 ## 
 ## 
-## Residual standard error: 27.87 on 124 degrees of freedom
-## Multiple R-Squared: 0.3841,  Adjusted R-squared: 0.3642 
-## F-statistic: 19.33 on 4 and 124 DF,  p-value: 2.216e-12 
+## Residual standard error: 2.419 on 126 degrees of freedom
+## Multiple R-Squared: 0.9959,  Adjusted R-squared: 0.9958 
+## F-statistic: 1.522e+04 on 2 and 126 DF,  p-value: < 2.2e-16 
 ## 
 ## 
 ## 
 ## Covariance matrix of residuals:
-##            OIL      YUS     CPUS       SUS
-## OIL  175.87030  0.96627 -0.01711   4.93399
-## YUS    0.96627  4.92607  0.05235  -2.04011
-## CPUS  -0.01711  0.05235  0.04819   0.01546
-## SUS    4.93399 -2.04011  0.01546 776.53784
+##          OIL     YUS
+## OIL 176.9160 -0.9235
+## YUS  -0.9235  5.8532
 ## 
 ## Correlation matrix of residuals:
-##            OIL      YUS      CPUS       SUS
-## OIL   1.000000  0.03283 -0.005879  0.013351
-## YUS   0.032829  1.00000  0.107433 -0.032985
-## CPUS -0.005879  0.10743  1.000000  0.002528
-## SUS   0.013351 -0.03299  0.002528  1.000000
+##         OIL     YUS
+## OIL  1.0000 -0.0287
+## YUS -0.0287  1.0000
 \end{verbatim}
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-6-1.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-6-2.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-6-3.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-6-4.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-7-1.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-7-2.pdf}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
