@@ -250,8 +250,15 @@ them. The goal of this assignment is to replicate the results of
 Peersman (2005) as well as preform additional robustness test to ensure
 the validity of Peermans (2005) results.
 
-This paper will be constructed as follows. The first section will give
-an overview of the paper with respects to the economics, methodology and
+\begin{itemize}
+\tightlist
+\item
+  summarize what robustiness checks and analysis you did(including the
+  ones that you replicate)
+\end{itemize}
+
+This paper is structured as follows: The first section will give an
+overview of the paper with respects to the economics, methodology and
 data that Peersman (2005) used. The second section will replicate the
 results for the US. The third section will perform robustness checks and
 the forth section will conclude.
@@ -542,6 +549,182 @@ functions.
 
 \includegraphics{replication_files/figure-latex/unnamed-chunk-7-1.pdf}
 \includegraphics{replication_files/figure-latex/unnamed-chunk-7-2.pdf}
+
+\hypertarget{structural-var}{%
+\section{Structural VAR}\label{structural-var}}
+
+Argue that authors do no make use of a simple VAR but rather a
+structural VAR.
+
+First VAR analysis that Peersman does is based on conventional zero
+contemporaneous and long run restrictions. Peersman assumes that there
+is a contemporaneous impact of an oil shock on all other variables in
+the system, but no immediate impact of the other shocks on oil prices.
+\includegraphics{replication_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+\begin{verbatim}
+## 
+## VAR Estimation Results:
+## ========================= 
+## Endogenous variables: OIL, YUS, SUS, CPUS 
+## Deterministic variables: both 
+## Sample size: 129 
+## Log Likelihood: -1297.142 
+## Roots of the characteristic polynomial:
+## 0.9102 0.6412 0.6412 0.4923
+## Call:
+## VAR(y = ts_us, p = 1, type = "both")
+## 
+## 
+## Estimation results for equation OIL: 
+## ==================================== 
+## OIL = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
+## 
+##         Estimate Std. Error t value Pr(>|t|)    
+## OIL.l1   0.91540    0.03429  26.699   <2e-16 ***
+## YUS.l1   0.54635    0.40008   1.366    0.175    
+## SUS.l1  -0.03048    0.03418  -0.892    0.374    
+## CPUS.l1  3.75254    9.41724   0.398    0.691    
+## const   11.11224   10.07828   1.103    0.272    
+## trend   -4.27647    9.40833  -0.455    0.650    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## 
+## Residual standard error: 13.3 on 123 degrees of freedom
+## Multiple R-Squared: 0.8773,  Adjusted R-squared: 0.8723 
+## F-statistic: 175.9 on 5 and 123 DF,  p-value: < 2.2e-16 
+## 
+## 
+## Estimation results for equation YUS: 
+## ==================================== 
+## YUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
+## 
+##          Estimate Std. Error t value Pr(>|t|)    
+## OIL.l1  -0.002228   0.005626  -0.396   0.6928    
+## YUS.l1   0.682975   0.065645  10.404   <2e-16 ***
+## SUS.l1   0.007653   0.005608   1.365   0.1748    
+## CPUS.l1 -3.196317   1.545194  -2.069   0.0407 *  
+## const   -3.196802   1.653659  -1.933   0.0555 .  
+## trend    3.513784   1.543733   2.276   0.0246 *  
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## 
+## Residual standard error: 2.183 on 123 degrees of freedom
+## Multiple R-Squared: 0.9967,  Adjusted R-squared: 0.9966 
+## F-statistic:  7483 on 5 and 123 DF,  p-value: < 2.2e-16 
+## 
+## 
+## Estimation results for equation SUS: 
+## ==================================== 
+## SUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
+## 
+##         Estimate Std. Error t value Pr(>|t|)    
+## OIL.l1  -0.01606    0.07210  -0.223   0.8241    
+## YUS.l1  -1.60960    0.84137  -1.913   0.0581 .  
+## SUS.l1   0.59204    0.07187   8.237 2.19e-13 ***
+## CPUS.l1  2.65874   19.80468   0.134   0.8934    
+## const   26.05067   21.19487   1.229   0.2214    
+## trend   -1.07095   19.78596  -0.054   0.9569    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## 
+## Residual standard error: 27.98 on 123 degrees of freedom
+## Multiple R-Squared: 0.3841,  Adjusted R-squared: 0.359 
+## F-statistic: 15.34 on 5 and 123 DF,  p-value: 1.051e-11 
+## 
+## 
+## Estimation results for equation CPUS: 
+## ===================================== 
+## CPUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
+## 
+##           Estimate Std. Error t value Pr(>|t|)    
+## OIL.l1   5.145e-06  2.821e-04   0.018    0.985    
+## YUS.l1   4.637e-03  3.292e-03   1.408    0.162    
+## SUS.l1   1.488e-04  2.812e-04   0.529    0.598    
+## CPUS.l1 -5.050e-01  7.749e-02  -6.517 1.66e-09 ***
+## const   -5.060e-01  8.293e-02  -6.101 1.26e-08 ***
+## trend    1.500e+00  7.742e-02  19.380  < 2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## 
+## Residual standard error: 0.1095 on 123 degrees of freedom
+## Multiple R-Squared:     1,   Adjusted R-squared:     1 
+## F-statistic: 2.985e+06 on 5 and 123 DF,  p-value: < 2.2e-16 
+## 
+## 
+## 
+## Covariance matrix of residuals:
+##            OIL      YUS       SUS     CPUS
+## OIL  177.00283  1.21842   4.89965  0.08706
+## YUS    1.21842  4.76540  -1.99552 -0.03294
+## SUS    4.89965 -1.99552 782.83251  0.04171
+## CPUS   0.08706 -0.03294   0.04171  0.01199
+## 
+## Correlation matrix of residuals:
+##          OIL      YUS      SUS     CPUS
+## OIL  1.00000  0.04195  0.01316  0.05977
+## YUS  0.04195  1.00000 -0.03267 -0.13782
+## SUS  0.01316 -0.03267  1.00000  0.01362
+## CPUS 0.05977 -0.13782  0.01362  1.00000
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## SVAR Estimation Results:
+## ======================== 
+## 
+## Call:
+## BQ(x = var1)
+## 
+## Type: Blanchard-Quah 
+## Sample size: 129 
+## Log Likelihood: -1309.43 
+## 
+## Estimated contemporaneous impact matrix:
+##             OIL      YUS      SUS    CPUS
+## OIL  12.6575204 -3.57344  1.98768 -0.2639
+## YUS   0.7361474  1.98758 -0.47169  0.2248
+## SUS  -2.1204506  6.25470 27.18786 -0.1870
+## CPUS  0.0002438 -0.02664  0.00841  0.1059
+## 
+## Estimated identified long run impact matrix:
+##             OIL        YUS      SUS    CPUS
+## OIL  160.319298  0.0000000  0.00000 0.00000
+## YUS    0.821661  6.0610476  0.00000 0.00000
+## SUS  -14.739307 -8.5814350 66.72326 0.00000
+## CPUS   0.001784  0.0001243  0.01218 0.07033
+## 
+## Covariance matrix of reduced form residuals (*100):
+##            OIL      YUS       SUS   CPUS
+## OIL  17700.283  121.842   489.965  8.706
+## YUS    121.842  476.540  -199.552 -3.294
+## SUS    489.965 -199.552 78283.251  4.171
+## CPUS     8.706   -3.294     4.171  1.199
+\end{verbatim}
+
+\includegraphics{replication_files/figure-latex/unnamed-chunk-8-2.pdf}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]   NA    0    0    0
+## [2,]   NA   NA    0    0
+## [3,]   NA   NA   NA    0
+## [4,]   NA   NA   NA   NA
+\end{verbatim}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]   NA    0    0    0
+## [2,]    0   NA    0    0
+## [3,]    0    0   NA    0
+## [4,]    0    0    0   NA
+\end{verbatim}
+
+\includegraphics{replication_files/figure-latex/unnamed-chunk-8-3.pdf}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
