@@ -266,17 +266,224 @@ the forth section will conclude.
 \hypertarget{overview-of-the-paper}{%
 \section{Overview of the paper}\label{overview-of-the-paper}}
 
-\hypertarget{theory}{%
-\subsection{Theory}\label{theory}}
+This section gives a brief overview of the economics of Peersman (2005)
+and a critical evaluation of the statistical approach that Peersman
+(2005) choose to analyze possible causes for the economic slowdown of
+the US.
 
-\hypertarget{data}{%
-\subsection{Data}\label{data}}
+\hypertarget{literature-review}{%
+\subsection{Literature Review}\label{literature-review}}
 
-\hypertarget{methodology}{%
-\subsection{Methodology}\label{methodology}}
+The 1990s was the start of an economic boom for the United States as
+they experienced the unusual combination of rapid output growth and
+extremely low and stable inflation. From 1994 to 2002 the United States
+real GDP grew by an average annual rate of almost 4 percent while annual
+inflation was less than 2 percent. However, by the end of 2001, the US
+began to experience negative growth (Peersman, 2005). Since 2001, the US
+economy has not experienced close to the same economic growth. It is
+therefore important to understand what caused the slowdown.
 
-\hypertarget{reconstructing-data}{%
-\section{Reconstructing data}\label{reconstructing-data}}
+The economic expansion that the US experienced made headlines as it was
+the longest expansion in economic history. Many explanations have been
+offered as to why the US experienced such rapid growth, but overall, it
+is attributed to numerous factors. Productivity growth increased
+tremendously which created a favorable investment environment. The
+private investment opportunities contributed to the advancements in
+technologies and inspired innovation (Weller, 2002). Furthermore, the
+Federal Open Market Committee (FOMC) created an environment for the
+Federal Reserve to keep inflation rates low and stable (Taylor, 1998).
+
+Another possible reason is that the US economy mostly experienced
+positive shocks during the late 1990s. The Fed has the responsibility to
+responds to shocks to the economy to ensure that output, employment, and
+inflation remain stable. The Fed can easily respond to a demand shock as
+it pushed output, employment, and inflation in the same direction.
+Therefore, the Fed will lower interest rate which will increase money
+supply to combat the effects of a demand shock. However, supply shock,
+such as an increase in oil prices, are more complicated to respond. With
+the threat of a recession, the Fed will need to decide whether to
+prioritize inflation stability or employment stability. Which attributed
+the economic boom that the US experienced, is the fact that large supply
+shocks were uncommon during the 1990s.
+
+After 10 years of economic growth, the US economy entered a recession.
+The 2001/2002 was relatively short lived. Kliesen (2003) argues that the
+recession was caused by shocks to investment by businesses and
+households and by a decline in real net exports. However, Kleisen (2003)
+does recognize that it can be extremely difficult to challenging to
+discover the root cause of a recession. Understanding fluctuation in the
+growth of an economy has been research by many economists but it is
+still relatively poorly understood. Therefore, Peersman (2005) adds
+value to research by examining four shocks (oil, demand, supply, and
+monetary policy) to analyze the origin of the slowdown.
+
+Peersman (2005) concludes that the slowdown of economic growth was
+caused by a combination of several shocks. This conclusion is
+non-surprising and therefore Peersman (2005) main contribution is the
+impressive mathematical and statistical analysis that he performed.
+
+\hypertarget{data-and-methodology}{%
+\subsection{Data and Methodology}\label{data-and-methodology}}
+
+This paper used quarterly data from 1980 to 2002 on the US consumer
+expenditure index (CPUS), real GDP (YUS), short term nominal interest
+rate (SUS) as well as data on the oil price (OIL). Changes in CPUS
+record the rate of inflation while changes in YUS record output growth.
+The data is presented in figure 2.1 below.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{replication_files/figure-latex/Figure1-1} 
+
+}
+
+\caption{Data\label{Figure1}}\label{fig:Figure1}
+\end{figure}
+
+Peersman (2005) makes use of a four-variable constant-coefficient VAR,
+with three lags and identifies four shocks. The variables included in
+the analysis is the first difference of oil prices, output growth
+measured by the real GDP index, consumer inflation measured by consumer
+price index and short-term nominal interest rates. The four shocks that
+are analyzed in this paper is an shock to oil price and an aggregate
+demand, aggregate supply, and monetary policy shock. Therefore, the
+equation can be presented as follows:
+
+\[\begin{bmatrix} \Delta oil_t \\ \Delta y_t \\ \Delta p_t \\ s_t \end{bmatrix} = \Biggl[ I - \sum_{i=1}^{n} A_i \Biggl]^{-1} \begin{bmatrix} b_{11}& b_{12}& b_{13} & b_{14} \\
+b_{21}& b_{22}& b_{23} & b_{24} \\
+b_{31}& b_{32}& b_{33} & b_{34} \\
+b_{41}& b_{42}& b_{43} & b_{44} \end{bmatrix} \begin{bmatrix} \epsilon_t^{oil} \\ \epsilon_t^{s} \\ \epsilon_t^{d} \\ \epsilon_t^{m} \end{bmatrix}\]
+
+Where \(\Delta oil_t\), \(\Delta y_t\) and \(\Delta p_t\) represent the
+first difference of the price of oil, output growth and the consumer
+prices respectively. \(s_t\) represents the short term nominal interest
+rate. The oil price, demand, supply and monetary shock in represented by
+\(\epsilon_t^{oil}\), \(\epsilon_t^{d}\), \(\epsilon_t^{s}\) and
+\(\epsilon_t^{m}\) respectively.
+
+Peersman (2005) assumes that the variables follow a covariance
+stationary process. He uses the Dickey fuller test to reject the null
+hypothesis of the existence of a unit root at a 10 percent level for
+OIL, YUS and CPUS, however, the null hypothesis for interest rates
+cannot be rejected. Peersman (2005) makes the assumption that interest
+rates are stationary since the nominal rate cannot have a unit root if
+both the real rate and inflation are stationary. This assumption will be
+intensely analyzed in section xx during which I will preform numerous
+robustness checks.
+
+The paper makes use of a traditional identification strategy using a
+combination of short-run and long-run restrictions. For the purpose of
+this assignment, the short-run and long-run restrictions will be
+discussed and modelled separately. Peersman (2005) assumes that there is
+a contemporaneous impact of an oil shock on all variables in the VAR,
+but no immediate impact of other shocks on oil prices. This assumption
+is consistent with previous literature. Further Peersman (2005) adds the
+restrictions that a monetary policy shock has no contemporaneous effect
+on output, since monetary policy shocks have a temporary effect on
+output. To model these contemporaneous effects
+\(b_{12} = b_{13} = b_{14} = b_{24} = 0\). However, to accurately model
+the contempoarous effects, the VAR needs {[}(k2-k{]}/2 restrictions,
+where k represents the number of variables. This implies that a further
+two contemporaneous effects are needed to model the short-run and long
+run restrictions further. I will argue two more contemporaneous effects
+that are consistent with past literature in the next section. Taking
+into account only the contemporanous effects that Peersman (2005)
+specifically specified in his paper, your matrix will change to:
+
+\[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
+b_{21}& b_{22}& b_{23} & 0 \\
+b_{31}& b_{32}& b_{33} & b_{34} \\
+b_{41}& b_{42}& b_{43} & b_{44} \end{bmatrix} \]
+
+Peersman (2005) follows Blanchard and Quah (1989), Gali (1992) and
+Gerlach and Smeth (1995) to add long-run restrictions to the model. He
+assumes that demand and monetary shocks have no long-run impact on the
+level of real output. Using this approach, demand and monetary policy
+shocks with permanent effects are therefore labelled as supply shock.
+
+\hypertarget{replication}{%
+\section{Replication}\label{replication}}
+
+\begin{verbatim}
+## 
+## SVAR Estimation Results:
+## ======================== 
+## 
+## Call:
+## BQ(x = var1)
+## 
+## Type: Blanchard-Quah 
+## Sample size: 87 
+## Log Likelihood: -509.82 
+## 
+## Estimated contemporaneous impact matrix:
+##           OIL      YUS   CPUS      SUS
+## OIL  14.27792 -0.60992 0.5745  0.93202
+## YUS   0.01323  0.46186 0.2982  0.14909
+## CPUS  0.09324 -0.06909 0.1888 -0.02819
+## SUS   0.10862 -0.03907 0.2478  0.78286
+## 
+## Estimated identified long run impact matrix:
+##          OIL      YUS  CPUS   SUS
+## OIL  14.8451  0.00000 0.000 0.000
+## YUS  -0.2685  1.15227 0.000 0.000
+## CPUS  0.5088 -0.08494 1.052 0.000
+## SUS   3.4184  2.47207 9.211 2.394
+## 
+## Covariance matrix of reduced form residuals (*100):
+##           OIL   YUS    CPUS     SUS
+## OIL  20542.97 21.74 145.556 244.673
+## YUS     21.74 32.46   2.140  17.400
+## CPUS   145.56  2.14   4.989   3.754
+## SUS    244.67 17.40   3.754  68.761
+\end{verbatim}
+
+\includegraphics{replication_files/figure-latex/unnamed-chunk-1-1.pdf}
+
+\hypertarget{impulse-response-function}{%
+\section{Impulse response function}\label{impulse-response-function}}
+
+First thing I need to do is convert the data to a time series object in
+R. And to do this I need to create a date column.
+
+The graph below, just shows you the dataset for the US. This is nice
+because you can see the pattern all the vaaraibles follow. This is not
+in the paper but might be nice to put in under `descriptive statistics'.
+
+Now that I have a nice little graph, I can continue by creating my VAR.
+WE first look at a simple four variable VAR. These variables are OIL,
+CPUS, YUS and SUS. This VAR will then be used for my impulse response
+functions.
+
+\hypertarget{structural-var}{%
+\section{Structural VAR}\label{structural-var}}
+
+Argue that authors do no make use of a simple VAR but rather a
+structural VAR.
+
+First VAR analysis that Peersman does is based on conventional zero
+contemporaneous and long run restrictions. Peersman assumes that there
+is a contemporaneous impact of an oil shock on all other variables in
+the system, but no immediate impact of the other shocks on oil
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]   NA    0    0    0
+## [2,]   NA   NA    0    0
+## [3,]   NA   NA   NA    0
+## [4,]   NA   NA   NA   NA
+\end{verbatim}
+
+\begin{verbatim}
+##      [,1] [,2] [,3] [,4]
+## [1,]   NA    0    0    0
+## [2,]    0   NA    0    0
+## [3,]    0    0   NA    0
+## [4,]    0    0    0   NA
+\end{verbatim}
+
+\includegraphics{replication_files/figure-latex/unnamed-chunk-2-1.pdf}
+\#\# ACTUAL PROJECT DTAA
 
 \hypertarget{test-wether-variables-are-stationary}{%
 \section{\texorpdfstring{Test wether variables are stationary
@@ -298,23 +505,12 @@ series is stationary
 If p-values is less than 0.05, it means we can reject the null
 hypothesis.
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-2-1.pdf}
-
 \begin{verbatim}
 ## 
 ##  Augmented Dickey-Fuller Test
 ## 
-## data:  slowdown_dataset$OIL
-## Dickey-Fuller = -2.0358, Lag order = 5, p-value = 0.5616
-## alternative hypothesis: stationary
-\end{verbatim}
-
-\begin{verbatim}
-## 
-##  Augmented Dickey-Fuller Test
-## 
-## data:  slowdown_dataset$YUS
-## Dickey-Fuller = -1.3894, Lag order = 5, p-value = 0.8304
+## data:  x$OIL
+## Dickey-Fuller = -5.5461, Lag order = 4, p-value = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -322,8 +518,8 @@ hypothesis.
 ## 
 ##  Augmented Dickey-Fuller Test
 ## 
-## data:  slowdown_dataset$SUS
-## Dickey-Fuller = -3.4394, Lag order = 5, p-value = 0.05113
+## data:  x$YUS
+## Dickey-Fuller = -4.0998, Lag order = 4, p-value = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -331,8 +527,17 @@ hypothesis.
 ## 
 ##  Augmented Dickey-Fuller Test
 ## 
-## data:  slowdown_dataset$CPUS
-## Dickey-Fuller = -1.5413, Lag order = 5, p-value = 0.7672
+## data:  x$SUS
+## Dickey-Fuller = -3.1218, Lag order = 4, p-value = 0.1143
+## alternative hypothesis: stationary
+\end{verbatim}
+
+\begin{verbatim}
+## 
+##  Augmented Dickey-Fuller Test
+## 
+## data:  x$CPUS
+## Dickey-Fuller = -4.7117, Lag order = 4, p-value = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -340,9 +545,9 @@ hypothesis.
 ## 
 ##  Phillips-Perron Unit Root Test
 ## 
-## data:  slowdown_dataset$OIL
-## Dickey-Fuller Z(alpha) = -8.7804, Truncation lag parameter = 4, p-value
-## = 0.6091
+## data:  x$OIL
+## Dickey-Fuller Z(alpha) = -66.677, Truncation lag parameter = 3, p-value
+## = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -350,9 +555,9 @@ hypothesis.
 ## 
 ##  Phillips-Perron Unit Root Test
 ## 
-## data:  slowdown_dataset$YUS
-## Dickey-Fuller Z(alpha) = -3.501, Truncation lag parameter = 4, p-value
-## = 0.9108
+## data:  x$YUS
+## Dickey-Fuller Z(alpha) = -56.833, Truncation lag parameter = 3, p-value
+## = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -360,9 +565,9 @@ hypothesis.
 ## 
 ##  Phillips-Perron Unit Root Test
 ## 
-## data:  slowdown_dataset$SUS
-## Dickey-Fuller Z(alpha) = -11.903, Truncation lag parameter = 4, p-value
-## = 0.4288
+## data:  x$SUS
+## Dickey-Fuller Z(alpha) = -15.957, Truncation lag parameter = 3, p-value
+## = 0.1816
 ## alternative hypothesis: stationary
 \end{verbatim}
 
@@ -370,14 +575,13 @@ hypothesis.
 ## 
 ##  Phillips-Perron Unit Root Test
 ## 
-## data:  slowdown_dataset$CPUS
-## Dickey-Fuller Z(alpha) = -1.0566, Truncation lag parameter = 4, p-value
-## = 0.9855
+## data:  x$CPUS
+## Dickey-Fuller Z(alpha) = -27.881, Truncation lag parameter = 3, p-value
+## = 0.01
 ## alternative hypothesis: stationary
 \end{verbatim}
 
-\hypertarget{optimal-lag-length}{%
-\section{Optimal lag length}\label{optimal-lag-length}}
+\#Optimal lag length
 
 I now determine the optimal lag length for an unrestricted VAR with a
 maximum lag length of 10.
@@ -392,32 +596,29 @@ I will use a VAR with lag length eual to one as specified by the paper.
 \begin{verbatim}
 ## $selection
 ## AIC(n)  HQ(n)  SC(n) FPE(n) 
-##      4      1      1      4 
+##      2      2      1      2 
 ## 
 ## $criteria
-##                   1            2            3           4           5
-## AIC(n)     9.388028     9.276473     9.256966    9.110758     9.33497
-## HQ(n)      9.614431     9.653811     9.785239    9.789965    10.16511
-## SC(n)      9.945526    10.205637    10.557796   10.783253    11.37913
-## FPE(n) 11948.510504 10700.252306 10522.129466 9135.114589 11518.86905
-##                  6            7            8            9           10
-## AIC(n)     9.47171     9.679419     9.682826     9.802003     9.872561
-## HQ(n)     10.45279    10.811433    10.965774    11.235887    11.457380
-## SC(n)     11.88754    12.466911    12.841983    13.332826    13.775050
-## FPE(n) 13354.70319 16692.619524 17095.671652 19774.982422 21940.976772
+##                  1          2          3          4          5          6
+## AIC(n) -0.33015958 -0.6286755 -0.5641153 -0.5631453 -0.3447481 -0.1678686
+## HQ(n)  -0.04365279 -0.1511641  0.1044006  0.2963751  0.7057768  1.0736608
+## SC(n)   0.38444841  0.5623378  1.1033034  1.5806787  2.2754812  2.9287660
+## FPE(n)  0.71962087  0.5361090  0.5772066  0.5875388  0.7507903  0.9323487
+##                 7          8          9         10
+## AIC(n) 0.01651095 -0.2157611 -0.3324915 -0.5683809
+## HQ(n)  1.44904491  1.4077774  1.4820515  1.4371666
+## SC(n)  3.58955090  3.8336842  4.1933591  4.4338750
+## FPE(n) 1.18570839  1.0145723  0.9995686  0.9024505
 \end{verbatim}
 
 \hypertarget{var}{%
 \section{VAR}\label{var}}
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-4-1.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-4-2.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-4-3.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-4-4.pdf}
-
-\hypertarget{diagnostic-tests-and-test-statistics}{%
-\section{Diagnostic tests and Test
-statistics}\label{diagnostic-tests-and-test-statistics}}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-5-1.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-5-2.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-5-3.pdf}
+\includegraphics{replication_files/figure-latex/unnamed-chunk-5-4.pdf}
+\# Diagnostic tests and Test statistics
 
 The results for diagnostic test for VAR(1), VAR(2) and VAR(3) are
 provided in the table below.
@@ -430,8 +631,8 @@ paper.
 ## 
 ##  Portmanteau Test (asymptotic)
 ## 
-## data:  Residuals of VAR object VAR(ts_us, p = 1, type = "both")
-## Chi-squared = 212.62, df = 240, p-value = 0.898
+## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
+## Chi-squared = 232.87, df = 240, p-value = 0.6172
 \end{verbatim}
 
 \begin{verbatim}
@@ -439,292 +640,57 @@ paper.
 ## 
 ##  JB-Test (multivariate)
 ## 
-## data:  Residuals of VAR object VAR(ts_us, p = 1, type = "both")
-## Chi-squared = 18850, df = 8, p-value < 2.2e-16
+## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
+## Chi-squared = 202.43, df = 8, p-value < 2.2e-16
 ## 
 ## 
 ## $Skewness
 ## 
 ##  Skewness only (multivariate)
 ## 
-## data:  Residuals of VAR object VAR(ts_us, p = 1, type = "both")
-## Chi-squared = 472.22, df = 4, p-value < 2.2e-16
+## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
+## Chi-squared = 20.322, df = 4, p-value = 0.0004313
 ## 
 ## 
 ## $Kurtosis
 ## 
 ##  Kurtosis only (multivariate)
 ## 
-## data:  Residuals of VAR object VAR(ts_us, p = 1, type = "both")
-## Chi-squared = 18377, df = 4, p-value < 2.2e-16
+## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
+## Chi-squared = 182.11, df = 4, p-value < 2.2e-16
 \end{verbatim}
 
 \begin{verbatim}
 ## 
 ##  ARCH (multivariate)
 ## 
-## data:  Residuals of VAR object VAR(ts_us, p = 1, type = "both")
-## Chi-squared = 786.65, df = 500, p-value = 3.886e-15
+## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
+## Chi-squared = 615.75, df = 500, p-value = 3e-04
 \end{verbatim}
 
-\hypertarget{impulse-response-function}{%
-\section{Impulse response function}\label{impulse-response-function}}
+\hypertarget{short-run-restrictions}{%
+\section{Short run restrictions}\label{short-run-restrictions}}
 
-First thing I need to do is convert the data to a time series object in
-R. And to do this I need to create a date column.
+Contemporaneous parameters
 
-The graph below, just shows you the dataset for the US. This is nice
-because you can see the pattern all the vaaraibles follow. This is not
-in the paper but might be nice to put in under `descriptive statistics'.
-\includegraphics{replication_files/figure-latex/unnamed-chunk-6-1.pdf}
+There is a contemporaneous impact of an oil shock on all variables but
+no immediate impact of other shocks on oil
 
-\begin{verbatim}
-## NULL
-\end{verbatim}
+monetary policy also has no contemporaneous effect on output.
 
-Now that I have a nice little graph, I can continue by creating my VAR.
-WE first look at a simple four variable VAR. These variables are OIL,
-CPUS, YUS and SUS. This VAR will then be used for my impulse response
-functions.
+Therefore b12=b13=b14=0 and b24=0 (found in Gerts discussion paper)
 
-\begin{verbatim}
-## 
-## VAR Estimation Results:
-## ========================= 
-## Endogenous variables: OIL, YUS 
-## Deterministic variables: const 
-## Sample size: 129 
-## Log Likelihood: -810.799 
-## Roots of the characteristic polynomial:
-## 0.9985 0.9184
-## Call:
-## VAR(y = ts_us, p = 1, type = "const")
-## 
-## 
-## Estimation results for equation OIL: 
-## ==================================== 
-## OIL = OIL.l1 + YUS.l1 + const 
-## 
-##        Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  0.91767    0.03408  26.927   <2e-16 ***
-## YUS.l1  0.02448    0.03423   0.715    0.476    
-## const   4.17798    2.63385   1.586    0.115    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 13.3 on 126 degrees of freedom
-## Multiple R-Squared: 0.8744,  Adjusted R-squared: 0.8724 
-## F-statistic: 438.5 on 2 and 126 DF,  p-value: < 2.2e-16 
-## 
-## 
-## Estimation results for equation YUS: 
-## ==================================== 
-## YUS = OIL.l1 + YUS.l1 + const 
-## 
-##         Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1 -0.002518   0.006199  -0.406   0.6853    
-## YUS.l1  0.999285   0.006226 160.496   <2e-16 ***
-## const   1.192616   0.479075   2.489   0.0141 *  
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 2.419 on 126 degrees of freedom
-## Multiple R-Squared: 0.9959,  Adjusted R-squared: 0.9958 
-## F-statistic: 1.522e+04 on 2 and 126 DF,  p-value: < 2.2e-16 
-## 
-## 
-## 
-## Covariance matrix of residuals:
-##          OIL     YUS
-## OIL 176.9160 -0.9235
-## YUS  -0.9235  5.8532
-## 
-## Correlation matrix of residuals:
-##         OIL     YUS
-## OIL  1.0000 -0.0287
-## YUS -0.0287  1.0000
-\end{verbatim}
+Note restrictions on matrix K2-k/2. This implies we need six
+restrictions. Gert paper gives 4 short run and two long run
+restrictions. Therefore we need to argue two more short run
+restrictions.
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-7-1.pdf}
-\includegraphics{replication_files/figure-latex/unnamed-chunk-7-2.pdf}
-
-\hypertarget{structural-var}{%
-\section{Structural VAR}\label{structural-var}}
-
-Argue that authors do no make use of a simple VAR but rather a
-structural VAR.
-
-First VAR analysis that Peersman does is based on conventional zero
-contemporaneous and long run restrictions. Peersman assumes that there
-is a contemporaneous impact of an oil shock on all other variables in
-the system, but no immediate impact of the other shocks on oil prices.
-\includegraphics{replication_files/figure-latex/unnamed-chunk-8-1.pdf}
-
-\begin{verbatim}
-## 
-## VAR Estimation Results:
-## ========================= 
-## Endogenous variables: OIL, YUS, SUS, CPUS 
-## Deterministic variables: both 
-## Sample size: 129 
-## Log Likelihood: -1297.142 
-## Roots of the characteristic polynomial:
-## 0.9102 0.6412 0.6412 0.4923
-## Call:
-## VAR(y = ts_us, p = 1, type = "both")
-## 
-## 
-## Estimation results for equation OIL: 
-## ==================================== 
-## OIL = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
-## 
-##         Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1   0.91540    0.03429  26.699   <2e-16 ***
-## YUS.l1   0.54635    0.40008   1.366    0.175    
-## SUS.l1  -0.03048    0.03418  -0.892    0.374    
-## CPUS.l1  3.75254    9.41724   0.398    0.691    
-## const   11.11224   10.07828   1.103    0.272    
-## trend   -4.27647    9.40833  -0.455    0.650    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 13.3 on 123 degrees of freedom
-## Multiple R-Squared: 0.8773,  Adjusted R-squared: 0.8723 
-## F-statistic: 175.9 on 5 and 123 DF,  p-value: < 2.2e-16 
-## 
-## 
-## Estimation results for equation YUS: 
-## ==================================== 
-## YUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
-## 
-##          Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  -0.002228   0.005626  -0.396   0.6928    
-## YUS.l1   0.682975   0.065645  10.404   <2e-16 ***
-## SUS.l1   0.007653   0.005608   1.365   0.1748    
-## CPUS.l1 -3.196317   1.545194  -2.069   0.0407 *  
-## const   -3.196802   1.653659  -1.933   0.0555 .  
-## trend    3.513784   1.543733   2.276   0.0246 *  
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 2.183 on 123 degrees of freedom
-## Multiple R-Squared: 0.9967,  Adjusted R-squared: 0.9966 
-## F-statistic:  7483 on 5 and 123 DF,  p-value: < 2.2e-16 
-## 
-## 
-## Estimation results for equation SUS: 
-## ==================================== 
-## SUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
-## 
-##         Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1  -0.01606    0.07210  -0.223   0.8241    
-## YUS.l1  -1.60960    0.84137  -1.913   0.0581 .  
-## SUS.l1   0.59204    0.07187   8.237 2.19e-13 ***
-## CPUS.l1  2.65874   19.80468   0.134   0.8934    
-## const   26.05067   21.19487   1.229   0.2214    
-## trend   -1.07095   19.78596  -0.054   0.9569    
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 27.98 on 123 degrees of freedom
-## Multiple R-Squared: 0.3841,  Adjusted R-squared: 0.359 
-## F-statistic: 15.34 on 5 and 123 DF,  p-value: 1.051e-11 
-## 
-## 
-## Estimation results for equation CPUS: 
-## ===================================== 
-## CPUS = OIL.l1 + YUS.l1 + SUS.l1 + CPUS.l1 + const + trend 
-## 
-##           Estimate Std. Error t value Pr(>|t|)    
-## OIL.l1   5.145e-06  2.821e-04   0.018    0.985    
-## YUS.l1   4.637e-03  3.292e-03   1.408    0.162    
-## SUS.l1   1.488e-04  2.812e-04   0.529    0.598    
-## CPUS.l1 -5.050e-01  7.749e-02  -6.517 1.66e-09 ***
-## const   -5.060e-01  8.293e-02  -6.101 1.26e-08 ***
-## trend    1.500e+00  7.742e-02  19.380  < 2e-16 ***
-## ---
-## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-## 
-## 
-## Residual standard error: 0.1095 on 123 degrees of freedom
-## Multiple R-Squared:     1,   Adjusted R-squared:     1 
-## F-statistic: 2.985e+06 on 5 and 123 DF,  p-value: < 2.2e-16 
-## 
-## 
-## 
-## Covariance matrix of residuals:
-##            OIL      YUS       SUS     CPUS
-## OIL  177.00283  1.21842   4.89965  0.08706
-## YUS    1.21842  4.76540  -1.99552 -0.03294
-## SUS    4.89965 -1.99552 782.83251  0.04171
-## CPUS   0.08706 -0.03294   0.04171  0.01199
-## 
-## Correlation matrix of residuals:
-##          OIL      YUS      SUS     CPUS
-## OIL  1.00000  0.04195  0.01316  0.05977
-## YUS  0.04195  1.00000 -0.03267 -0.13782
-## SUS  0.01316 -0.03267  1.00000  0.01362
-## CPUS 0.05977 -0.13782  0.01362  1.00000
-\end{verbatim}
-
-\begin{verbatim}
-## 
-## SVAR Estimation Results:
-## ======================== 
-## 
-## Call:
-## BQ(x = var1)
-## 
-## Type: Blanchard-Quah 
-## Sample size: 129 
-## Log Likelihood: -1309.43 
-## 
-## Estimated contemporaneous impact matrix:
-##             OIL      YUS      SUS    CPUS
-## OIL  12.6575204 -3.57344  1.98768 -0.2639
-## YUS   0.7361474  1.98758 -0.47169  0.2248
-## SUS  -2.1204506  6.25470 27.18786 -0.1870
-## CPUS  0.0002438 -0.02664  0.00841  0.1059
-## 
-## Estimated identified long run impact matrix:
-##             OIL        YUS      SUS    CPUS
-## OIL  160.319298  0.0000000  0.00000 0.00000
-## YUS    0.821661  6.0610476  0.00000 0.00000
-## SUS  -14.739307 -8.5814350 66.72326 0.00000
-## CPUS   0.001784  0.0001243  0.01218 0.07033
-## 
-## Covariance matrix of reduced form residuals (*100):
-##            OIL      YUS       SUS   CPUS
-## OIL  17700.283  121.842   489.965  8.706
-## YUS    121.842  476.540  -199.552 -3.294
-## SUS    489.965 -199.552 78283.251  4.171
-## CPUS     8.706   -3.294     4.171  1.199
-\end{verbatim}
-
-\includegraphics{replication_files/figure-latex/unnamed-chunk-8-2.pdf}
-
-\begin{verbatim}
-##      [,1] [,2] [,3] [,4]
-## [1,]   NA    0    0    0
-## [2,]   NA   NA    0    0
-## [3,]   NA   NA   NA    0
-## [4,]   NA   NA   NA   NA
-\end{verbatim}
-
-\begin{verbatim}
-##      [,1] [,2] [,3] [,4]
-## [1,]   NA    0    0    0
-## [2,]    0   NA    0    0
-## [3,]    0    0   NA    0
-## [4,]    0    0    0   NA
-\end{verbatim}
-
-\includegraphics{replication_files/figure-latex/unnamed-chunk-8-3.pdf}
+b23=0 since monetary policy shocks are shocks with a temporary effect on
+output, and are a combination of monetary policy, money demand an
+possibly exchange rate shocks, as longs as these shocks have an
+influence on short term interest rates\\
+Monetary policy has no effect on marcro economic variables (CObin,
+2012). Therefore b34=0
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}

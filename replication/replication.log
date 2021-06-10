@@ -1,65 +1,63 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.5.23)  4 JUN 2021 14:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  10 JUN 2021 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **replication.tex
 (./replication.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-05-11>
+LaTeX2e <2021-06-01>
+L3 programming layer <2021-06-01>
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/elsarticle/elsarti
 cle.cls
 Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-05-11 L3 programming layer (loader) 
+Package: expl3 2021-06-01 L3 programming layer (loader) 
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backen
 d-pdftex.def
 File: l3backend-pdftex.def 2021-05-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count179
-\l__pdf_internal_box=\box47
+\l__color_backend_stack_int=\count182
+\l__pdf_internal_box=\box50
 ))
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
 xparse.sty
-(c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
-xparse-2020-10-01.sty
-(c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/
-xparse-generic.tex)))
+Package: xparse 2021-06-01 L3 Experimental document command parser
+)
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.
 sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count180
+\etb@tempcnta=\count183
 )
 \@bls=\dimen138
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count181
-\c@section=\count182
-\c@subsection=\count183
-\c@subsubsection=\count184
-\c@paragraph=\count185
-\c@subparagraph=\count186
-\c@figure=\count187
-\c@table=\count188
+\c@part=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen139
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.
 sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.st
 y
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks16
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.
 sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
@@ -67,7 +65,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/pdfte
 x.def
@@ -76,23 +74,23 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
 )
-\c@tnote=\count189
-\c@fnote=\count190
-\c@cnote=\count191
-\c@ead=\count192
-\c@author=\count193
-\@eadauthor=\toks16
-\c@affn=\count194
-\absbox=\box48
-\elsarticlehighlightsbox=\box49
-\elsarticlegrabsbox=\box50
-\keybox=\box51
+\c@tnote=\count192
+\c@fnote=\count193
+\c@cnote=\count194
+\c@ead=\count195
+\c@author=\count196
+\@eadauthor=\toks17
+\c@affn=\count197
+\absbox=\box51
+\elsarticlehighlightsbox=\box52
+\elsarticlegrabsbox=\box53
+\keybox=\box54
 \Columnwidth=\dimen142
 \space@left=\dimen143
-\els@boxa=\box52
-\els@boxb=\box53
+\els@boxa=\box55
+\els@boxb=\box56
 \leftMargin=\dimen144
-\@enLab=\toks17
+\@enLab=\toks18
 \@sep=\skip49
 \@@sep=\skip50
 (./replication.spl) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/late
@@ -101,7 +99,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip51
 \bibsep=\skip52
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count195
+\c@NAT@ctr=\count198
 )
 \splwrite=\write3
 \openout3 = `replication.spl'.
@@ -147,11 +145,11 @@ sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count196
-\float@exts=\toks18
-\float@box=\box54
-\@float@everytoks=\toks19
-\@floatcapt=\box55
+\c@float@type=\count199
+\float@exts=\toks19
+\float@box=\box57
+\@float@everytoks=\toks20
+\@floatcapt=\box58
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.st
 y
@@ -173,16 +171,16 @@ Package fixltx2e Warning: fixltx2e is not required with releases after 2015
 
 Already applied: [0000/00/00] Old fixltx2e package on input line 53.
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/inputenc.s
 ty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.s
 ty
@@ -191,7 +189,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.
 sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks22
+\@emptytoks=\toks23
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
@@ -200,7 +198,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 ))
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.st
 y
-Package: amsmath 2020/09/23 v2.17i AMS math features
+Package: amsmath 2021/04/20 v2.17j AMS math features
 \@mathmargin=\skip53
 For additional information on amsmath, use the `?' option.
 
@@ -210,7 +208,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
+\@emptytoks=\toks24
 \ex@=\dimen146
 ))
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -220,75 +218,76 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count197
+\inf@bad=\count266
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count198
-\leftroot@=\count199
+\uproot@=\count267
+\leftroot@=\count268
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count266
-\DOTSCASE@=\count267
+\classnum@=\count269
+\DOTSCASE@=\count270
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box56
-\strutbox@=\box57
+\Mathstrutbox@=\box59
+\strutbox@=\box60
 \big@size=\dimen148
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count268
-\c@MaxMatrixCols=\count269
+\macc@depth=\count271
+\c@MaxMatrixCols=\count272
 \dotsspace@=\muskip16
-\c@parentequation=\count270
-\dspbrk@lvl=\count271
-\tag@help=\toks24
-\row@=\count272
-\column@=\count273
-\maxfields@=\count274
-\andhelp@=\toks25
+\c@parentequation=\count273
+\dspbrk@lvl=\count274
+\tag@help=\toks25
+\row@=\count275
+\column@=\count276
+\maxfields@=\count277
+\andhelp@=\toks26
 \eqnshift@=\dimen149
 \alignsep@=\dimen150
 \tagshift@=\dimen151
 \tagwidth@=\dimen152
 \totwidth@=\dimen153
 \lineht@=\dimen154
-\@envbody=\toks26
+\@envbody=\toks27
 \multlinegap=\skip54
 \multlinetaggap=\skip55
-\mathdisplay@stack=\toks27
+\mathdisplay@stack=\toks28
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amscls/amsthm.st
 y
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks28
-\thm@bodyfont=\toks29
-\thm@headfont=\toks30
-\thm@notefont=\toks31
-\thm@headpunct=\toks32
+\thm@style=\toks29
+\thm@bodyfont=\toks30
+\thm@headfont=\toks31
+\thm@notefont=\toks32
+\thm@headpunct=\toks33
 \thm@preskip=\skip56
 \thm@postskip=\skip57
 \thm@headsep=\skip58
-\dth@everypar=\toks33
+\dth@everypar=\toks34
 LaTeX Info: Redefining \qed on input line 273.
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.st
 y
-Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
 \LTpre=\skip61
 \LTpost=\skip62
-\LTchunksize=\count275
+\LTchunksize=\count278
 \LTcapwidth=\dimen155
-\LT@head=\box58
-\LT@firsthead=\box59
-\LT@foot=\box60
-\LT@lastfoot=\box61
-\LT@cols=\count276
-\LT@rows=\count277
-\c@LT@tables=\count278
-\c@LT@chunks=\count279
-\LT@p@ftn=\toks34
+\LT@head=\box61
+\LT@firsthead=\box62
+\LT@foot=\box63
+\LT@lastfoot=\box64
+\LT@gbox=\box65
+\LT@cols=\count279
+\LT@rows=\count280
+\c@LT@tables=\count281
+\c@LT@chunks=\count282
+\LT@p@ftn=\toks35
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.
 sty
@@ -297,9 +296,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count280
-\Gm@cntv=\count281
-\c@Gm@tempcnt=\count282
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
 \Gm@bindingoffset=\dimen156
 \Gm@wd@mp=\dimen157
 \Gm@odd@mp=\dimen158
@@ -308,7 +307,7 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen161
 \Gm@layouthoffset=\dimen162
 \Gm@layoutvoffset=\dimen163
-\Gm@dimlist=\toks35
+\Gm@dimlist=\toks36
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.
 sty
@@ -327,9 +326,9 @@ rs
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/footmisc/footmisc.
 sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks36
+\FN@temptoken=\toks37
 \footnotemargin=\dimen164
-\c@pp@next@reset=\count283
+\c@pp@next@reset=\count286
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -342,18 +341,18 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 y
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 \col@sep=\dimen165
-\ar@mcellbox=\box62
+\ar@mcellbox=\box66
 \extrarowheight=\dimen166
-\NC@list=\toks37
+\NC@list=\toks38
 \extratabsurround=\skip72
 \backup@length=\skip73
-\ar@cellbox=\box63
+\ar@cellbox=\box67
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.
 sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.
 sty
@@ -401,18 +400,18 @@ s.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen167
-\Hy@linkcounter=\count284
-\Hy@pagecounter=\count285
+\Hy@linkcounter=\count287
+\Hy@pagecounter=\count288
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.de
 f
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref-
 langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
 nguages
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.
@@ -423,10 +422,10 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 s.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count286
+\Hy@SavedSpaceFactor=\count289
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -437,7 +436,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count287
+\c@Hy@tempcnt=\count290
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -454,34 +453,33 @@ tcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count288
+\Fld@menulength=\count291
 \Field@Width=\dimen169
 \Fld@charsize=\dimen170
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+Package hyperref Info: Hyper figures OFF on input line 6076.
+Package hyperref Info: Link nesting OFF on input line 6081.
+Package hyperref Info: Hyper index ON on input line 6084.
+Package hyperref Info: backreferencing OFF on input line 6091.
+Package hyperref Info: Link coloring OFF on input line 6096.
+Package hyperref Info: Link coloring with OCG OFF on input line 6101.
+Package hyperref Info: PDF/A mode OFF on input line 6106.
+LaTeX Info: Redefining \ref on input line 6146.
+LaTeX Info: Redefining \pageref on input line 6150.
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.
 sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-\Hy@abspage=\count289
-\c@Item=\count290
-\c@Hfootnote=\count291
+\Hy@abspage=\count292
+\c@Item=\count293
+\c@Hfootnote=\count294
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.d
 ef
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx
 .sty
@@ -489,8 +487,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count292
-\c@bookmark@seq@number=\count293
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rer
 unfilecheck.sty
@@ -514,16 +512,16 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 87.
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.st
 y
-Package: siunitx 2021-05-21 v3.0.4 A comprehensive (SI) units package
+Package: siunitx 2021-06-09 v3.0.12 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen171
-\l__siunitx_angle_marker_box=\box64
-\l__siunitx_angle_unit_box=\box65
-\l__siunitx_compound_count_int=\count294
-\l__siunitx_number_exponent_fixed_int=\count295
-\l__siunitx_number_min_decimal_int=\count296
-\l__siunitx_number_min_integer_int=\count297
-\l__siunitx_number_round_precision_int=\count298
-\l__siunitx_number_group_minimum_int=\count299
+\l__siunitx_angle_marker_box=\box68
+\l__siunitx_angle_unit_box=\box69
+\l__siunitx_compound_count_int=\count297
+\l__siunitx_number_exponent_fixed_int=\count298
+\l__siunitx_number_min_decimal_int=\count299
+\l__siunitx_number_min_integer_int=\count300
+\l__siunitx_number_round_precision_int=\count301
+\l__siunitx_number_group_minimum_int=\count302
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
@@ -532,77 +530,77 @@ Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
 .cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 149.
 )
-\l__siunitx_print_tmp_box=\box66
-\l__siunitx_table_tmp_box=\box67
+\l__siunitx_table_tmp_box=\box70
 \l__siunitx_table_tmp_dim=\dimen172
 \l__siunitx_table_column_width_dim=\dimen173
-\l__siunitx_table_integer_box=\box68
-\l__siunitx_table_decimal_box=\box69
-\l__siunitx_table_before_box=\box70
-\l__siunitx_table_after_box=\box71
-\l__siunitx_table_carry_dim=\dimen174
-\l__siunitx_unit_tmp_int=\count300
-\l__siunitx_unit_position_int=\count301
-\l__siunitx_unit_total_int=\count302
+\l__siunitx_table_integer_box=\box71
+\l__siunitx_table_decimal_box=\box72
+\l__siunitx_table_before_box=\box73
+\l__siunitx_table_after_box=\box74
+\l__siunitx_table_before_dim=\dimen174
+\l__siunitx_table_carry_dim=\dimen175
+\l__siunitx_unit_tmp_int=\count303
+\l__siunitx_unit_position_int=\count304
+\l__siunitx_unit_total_int=\count305
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2
 e/l3keys2e.sty
-Package: l3keys2e 2021-05-07 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2021-06-01 LaTeX2e option processing using LaTeX3 keys
 ))
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.
 sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip75
-\multirow@cntb=\count303
+\multirow@cntb=\count306
 \multirow@dima=\skip76
-\bigstrutjot=\dimen175
+\bigstrutjot=\dimen176
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
 ) (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count304
-\calc@Bcount=\count305
-\calc@Adimen=\dimen176
-\calc@Bdimen=\dimen177
+\calc@Acount=\count307
+\calc@Bcount=\count308
+\calc@Adimen=\dimen177
+\calc@Bdimen=\dimen178
 \calc@Askip=\skip77
 \calc@Bskip=\skip78
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count306
+\calc@Ccount=\count309
 \calc@Cskip=\skip79
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen178
-\TX@old@table=\dimen179
-\TX@old@col=\dimen180
-\TX@target=\dimen181
-\TX@delta=\dimen182
-\TX@cols=\count307
-\TX@ftn=\toks38
+\TX@col@width=\dimen179
+\TX@old@table=\dimen180
+\TX@old@col=\dimen181
+\TX@target=\dimen182
+\TX@delta=\dimen183
+\TX@cols=\count310
+\TX@ftn=\toks39
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.
 sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen183
-\lightrulewidth=\dimen184
-\cmidrulewidth=\dimen185
-\belowrulesep=\dimen186
-\belowbottomsep=\dimen187
-\aboverulesep=\dimen188
-\abovetopsep=\dimen189
-\cmidrulesep=\dimen190
-\cmidrulekern=\dimen191
-\defaultaddspace=\dimen192
-\@cmidla=\count308
-\@cmidlb=\count309
-\@aboverulesep=\dimen193
-\@belowrulesep=\dimen194
-\@thisruleclass=\count310
-\@lastruleclass=\count311
-\@thisrulewidth=\dimen195
+\heavyrulewidth=\dimen184
+\lightrulewidth=\dimen185
+\cmidrulewidth=\dimen186
+\belowrulesep=\dimen187
+\belowbottomsep=\dimen188
+\aboverulesep=\dimen189
+\abovetopsep=\dimen190
+\cmidrulesep=\dimen191
+\cmidrulekern=\dimen192
+\defaultaddspace=\dimen193
+\@cmidla=\count311
+\@cmidlb=\count312
+\@aboverulesep=\dimen194
+\@belowrulesep=\dimen195
+\@thisruleclass=\count313
+\@lastruleclass=\count314
+\@thisrulewidth=\dimen196
 )
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.st
 y
@@ -611,13 +609,13 @@ Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.s
 ty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen196
-\captionmargin@=\dimen197
-\captionwidth=\dimen198
-\caption@tempdima=\dimen199
-\caption@indent=\dimen256
-\caption@parindent=\dimen257
-\caption@hangindent=\dimen258
+\captionmargin=\dimen197
+\captionmargin@=\dimen198
+\captionwidth=\dimen199
+\caption@tempdima=\dimen256
+\caption@indent=\dimen257
+\caption@parindent=\dimen258
+\caption@hangindent=\dimen259
 Package caption Info: elsarticle document class detected.
 
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption-el
@@ -625,8 +623,8 @@ sarticle.sto
 File: caption-elsarticle.sto 2020/08/22 v2.0 Adaption of the caption package to
  the elsarticle document class (AR)
 ))
-\c@caption@flags=\count312
-\c@continuedfloat=\count313
+\c@caption@flags=\count315
+\c@continuedfloat=\count316
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -717,7 +715,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count314
+\c@section@level=\count317
 )
 LaTeX Info: Redefining \ref on input line 166.
 LaTeX Info: Redefining \pageref on input line 166.
@@ -728,61 +726,51 @@ LaTeX Info: Redefining \nameref on input line 166.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-66.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+11.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-66.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+11.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-166.
+211.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-166.
+211.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 166.
+(Font)              <9> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 166.
+(Font)              <6> on input line 211.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 166.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 166
+(Font)              <5> on input line 211.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 211
 .
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 166
+LaTeX Font Info:    Trying to load font information for U+msb on input line 211
 .
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-166.
-(c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmss.fd
-File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 
-166.
-(c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 211.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 211.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
 11.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 211.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 211.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
 56.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
@@ -792,14 +780,6 @@ File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
 x.map}]
-<replication_files/figure-latex/unnamed-chunk-2-1.pdf, id=89, 433.62pt x 361.35
-pt>
-File: replication_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-2-1.pdf  
-used on input line 301.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -809,6 +789,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
+<replication_files/figure-latex/Figure1-1.png, id=87, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure1-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure1-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure1-1.png  used on 
+input line 336.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -817,7 +803,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3 <./replication_files/figure-latex/unnamed-chunk-2-1.pdf>]
+[3]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -826,49 +812,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4]
-<replication_files/figure-latex/unnamed-chunk-4-1.pdf, id=114, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-4-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-4-1.pdf  
-used on input line 413.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-4-2.pdf, id=115, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-4-2.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-4-2.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-4-2.pdf  
-used on input line 414.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-4-3.pdf, id=116, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-4-3.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-4-3.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-4-3.pdf  
-used on input line 415.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-4-4.pdf, id=117, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-4-4.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-4-4.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-4-4.pdf  
-used on input line 416.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Overfull \hbox (386.25906pt too wide) in paragraph at lines 413--417
-[][] []
- []
-
-
-Overfull \hbox (386.25906pt too wide) in paragraph at lines 413--417
-[] [] 
- []
-
+[4 <./replication_files/figure-latex/Figure1-1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -878,6 +822,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
+<replication_files/figure-latex/unnamed-chunk-1-1.pdf, id=112, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-1-1.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-1-1.pdf  
+used on input line 441.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -887,6 +839,124 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7 <./replication_files/figure-latex/unnamed-chunk-1-1.pdf>]
+<replication_files/figure-latex/unnamed-chunk-2-1.pdf, id=129, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-2-1.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-2-1.pdf  
+used on input line 485.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--487
+[][] \T1/lmr/m/n/10.95 ##
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[9 <./replication_files/figure-latex/unnamed-chunk-2-1.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[11]
+<replication_files/figure-latex/unnamed-chunk-5-1.pdf, id=152, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-5-1.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-1.pdf  
+used on input line 617.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+<replication_files/figure-latex/unnamed-chunk-5-2.pdf, id=153, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-5-2.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-2.pdf  
+used on input line 618.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+<replication_files/figure-latex/unnamed-chunk-5-3.pdf, id=154, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-5-3.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-5-3.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-3.pdf  
+used on input line 619.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+<replication_files/figure-latex/unnamed-chunk-5-4.pdf, id=155, 433.62pt x 361.3
+5pt>
+File: replication_files/figure-latex/unnamed-chunk-5-4.pdf Graphic file (type p
+df)
+<use replication_files/figure-latex/unnamed-chunk-5-4.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-4.pdf  
+used on input line 620.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Overfull \hbox (386.25906pt too wide) in paragraph at lines 617--622
+[][] []
+ []
+
+
+Overfull \hbox (386.25906pt too wide) in paragraph at lines 617--622
+[] []
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[12]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[13]
 Overfull \vbox (116.76564pt too high) has occurred while \output is active []
 
 
@@ -897,110 +967,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7 <./replication_files/figure-latex/unnamed-chunk-4-1.pdf> <./replication_file
-s/figure-latex/unnamed-chunk-4-2.pdf> <./replication_files/figure-latex/unnamed
--chunk-4-3.pdf> <./replication_files/figure-latex/unnamed-chunk-4-4.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[8]
-<replication_files/figure-latex/unnamed-chunk-6-1.pdf, id=163, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-6-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-6-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-6-1.pdf  
-used on input line 479.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[9 <./replication_files/figure-latex/unnamed-chunk-6-1.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[10]
-<replication_files/figure-latex/unnamed-chunk-7-1.pdf, id=179, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-7-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-7-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-7-1.pdf  
-used on input line 550.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-7-2.pdf, id=180, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-7-2.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-7-2.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-7-2.pdf  
-used on input line 551.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Overfull \hbox (386.25906pt too wide) in paragraph at lines 550--552
-[][] [] 
- []
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[11]
-<replication_files/figure-latex/unnamed-chunk-8-1.pdf, id=185, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-8-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-8-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-8-1.pdf  
-used on input line 563.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[12 <./replication_files/figure-latex/unnamed-chunk-7-1.pdf> <./replication_fil
-es/figure-latex/unnamed-chunk-7-2.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[13 <./replication_files/figure-latex/unnamed-chunk-8-1.pdf>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[14]
+[14 <./replication_files/figure-latex/unnamed-chunk-5-1.pdf> <./replication_fil
+es/figure-latex/unnamed-chunk-5-2.pdf> <./replication_files/figure-latex/unname
+d-chunk-5-3.pdf> <./replication_files/figure-latex/unnamed-chunk-5-4.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1019,40 +988,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16]
-<replication_files/figure-latex/unnamed-chunk-8-2.pdf, id=223, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-8-2.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-8-2.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-8-2.pdf  
-used on input line 709.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17 <./replication_files/figure-latex/unnamed-chunk-8-2.pdf>]
-<replication_files/figure-latex/unnamed-chunk-8-3.pdf, id=233, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-8-3.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-8-3.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-8-3.pdf  
-used on input line 727.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[18 <./replication_files/figure-latex/unnamed-chunk-8-3.pdf>]
 No file replication.bbl.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1062,35 +997,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[19] (./replication.aux)
+[17] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: 40489DC30129AABE69A0268D711D2A59;2136.
+(rerunfilecheck)             Checksum: 2F4F4EE6957401486987E5FFBD52B7C7;1907.
  ) 
 Here is how much of TeX's memory you used:
- 15285 strings out of 480796
- 271077 string characters out of 5903255
- 544943 words of memory out of 5000000
- 32333 multiletter control sequences out of 15000+600000
- 473915 words of font info for 77 fonts, out of 8000000 for 9000
+ 15302 strings out of 480496
+ 271176 string characters out of 5897906
+ 553855 words of memory out of 5000000
+ 32676 multiletter control sequences out of 15000+600000
+ 458747 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 70i,11n,76p,289b,891s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,12n,80p,289b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
-nc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1
-.enc}<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/l
-mbx10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public
-/lm/lmr10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/pu
-blic/lm/lmr12.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type
-1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmr9.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/font
-s/type1/public/lm/lmri10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist
-/fonts/type1/public/lm/lmri7.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-
-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/te
-xmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/jesic/AppData/Roaming/TinyT
-eX/texmf-dist/fonts/type1/public/lm/lmtt9.pfb>
-Output written on replication.pdf (19 pages, 308963 bytes).
+nc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mat
+hsy.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
+m-rm.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/
+lm-mathit.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvip
+s/lm/lm-mathex.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
+/dvips/lm/lm-ts1.enc}<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
+ype1/public/lm/lmbx10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fo
+nts/type1/public/lm/lmex10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/tex
+mf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX
+/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/jesic/AppData/Roaming/Tin
+yTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/jesic/AppData/Roaming
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/Roam
+ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/jesic/AppData/R
+oaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/jesic/AppD
+ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/Users/jesic/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users/je
+sic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Use
+rs/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:
+/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pf
+b><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt
+9.pfb>
+Output written on replication.pdf (17 pages, 328216 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 250 compressed objects within 3 object streams
- 56 named destinations out of 1000 (max. 500000)
- 192 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 156 words of extra memory for PDF output out of 10000 (max. 10000000)
 
