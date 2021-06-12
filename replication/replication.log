@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  10 JUN 2021 22:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  12 JUN 2021 02:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,11 +789,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-<replication_files/figure-latex/Figure1-1.png, id=87, 433.62pt x 361.35pt>
+<replication_files/figure-latex/Figure1-1.png, id=95, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure1-1.png  used on 
-input line 336.
+input line 339.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -822,14 +822,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-<replication_files/figure-latex/unnamed-chunk-1-1.pdf, id=112, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-1-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-1-1.pdf  
-used on input line 441.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -839,28 +831,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7 <./replication_files/figure-latex/unnamed-chunk-1-1.pdf>]
-<replication_files/figure-latex/unnamed-chunk-2-1.pdf, id=129, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-2-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-2-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-2-1.pdf  
-used on input line 485.
+<replication_files/figure-latex/Figure2-1.png, id=124, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure2-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure2-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure2-1.png  used on 
+input line 466.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+<replication_files/figure-latex/Figure3-1.png, id=125, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure3-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure3-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure3-1.png  used on 
+input line 486.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--487
-[][] \T1/lmr/m/n/10.95 ##
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7 <./replication_files/figure-latex/Figure2-1.png>]
+<replication_files/figure-latex/Figure4-1.png, id=133, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure4-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure4-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure4-1.png  used on 
+input line 506.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -869,7 +866,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8]
+[8 <./replication_files/figure-latex/Figure3-1.png>]
+<replication_files/figure-latex/Figure5-1.png, id=140, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure5-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure5-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure5-1.png  used on 
+input line 528.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -878,7 +881,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9 <./replication_files/figure-latex/unnamed-chunk-2-1.pdf>]
+[9 <./replication_files/figure-latex/Figure4-1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -887,7 +890,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10]
+[10 <./replication_files/figure-latex/Figure5-1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -897,48 +900,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-<replication_files/figure-latex/unnamed-chunk-5-1.pdf, id=152, 433.62pt x 361.3
+<replication_files/figure-latex/unnamed-chunk-1-1.pdf, id=159, 433.62pt x 361.3
 5pt>
-File: replication_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (type p
+File: replication_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type p
 df)
-<use replication_files/figure-latex/unnamed-chunk-5-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-1.pdf  
-used on input line 617.
+<use replication_files/figure-latex/unnamed-chunk-1-1.pdf>
+Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-1-1.pdf  
+used on input line 597.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-5-2.pdf, id=153, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-5-2.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-5-2.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-2.pdf  
-used on input line 618.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-5-3.pdf, id=154, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-5-3.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-5-3.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-3.pdf  
-used on input line 619.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/unnamed-chunk-5-4.pdf, id=155, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-5-4.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-5-4.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-5-4.pdf  
-used on input line 620.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-
-Overfull \hbox (386.25906pt too wide) in paragraph at lines 617--622
-[][] []
- []
-
-
-Overfull \hbox (386.25906pt too wide) in paragraph at lines 617--622
-[] []
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -947,7 +916,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12]
+[12 <./replication_files/figure-latex/unnamed-chunk-1-1.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -957,8 +926,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [13]
-Overfull \vbox (116.76564pt too high) has occurred while \output is active []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -967,9 +934,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14 <./replication_files/figure-latex/unnamed-chunk-5-1.pdf> <./replication_fil
-es/figure-latex/unnamed-chunk-5-2.pdf> <./replication_files/figure-latex/unname
-d-chunk-5-3.pdf> <./replication_files/figure-latex/unnamed-chunk-5-4.pdf>]
+[14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -988,6 +953,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
 No file replication.bbl.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -997,18 +971,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17] (./replication.aux)
+[18] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: 2F4F4EE6957401486987E5FFBD52B7C7;1907.
+(rerunfilecheck)             Checksum: 24747C5E4297A6DB4744D6D20A8DEF84;2447.
  ) 
 Here is how much of TeX's memory you used:
- 15302 strings out of 480496
- 271176 string characters out of 5897906
- 553855 words of memory out of 5000000
- 32676 multiletter control sequences out of 15000+600000
+ 15331 strings out of 480496
+ 271617 string characters out of 5897906
+ 559463 words of memory out of 5000000
+ 32698 multiletter control sequences out of 15000+600000
  458747 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,80p,289b,903s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,12n,80p,290b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mat
 hsy.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
@@ -1032,10 +1006,10 @@ rs/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:
 /Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pf
 b><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt
 9.pfb>
-Output written on replication.pdf (17 pages, 328216 bytes).
+Output written on replication.pdf (18 pages, 339162 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 228 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 

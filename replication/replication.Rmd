@@ -139,7 +139,7 @@ After 10 years of economic growth, the US economy entered a recession. The 2001/
 Peersman (2005) concludes that the slowdown of economic growth was caused by a combination of several shocks. This conclusion is non-surprising and therefore Peersman (2005) main contribution is the impressive mathematical and statistical analysis that he performed. 
 
 ## Data and Methodology 
-This paper used quarterly data from 1980 to 2002 on the US consumer expenditure index (CPUS), real GDP (YUS), short term nominal interest rate (SUS) as well as data on the oil price (OIL). Changes in CPUS record the rate of inflation while changes in YUS record output growth. The data is presented in figure 2.1 below.
+This paper used quarterly data from 1980 to 2002 on the US consumer expenditure index (CPUS), real GDP (YUS), short term nominal interest rate (SUS) as well as data on the oil price (OIL). Changes in CPUS record the rate of consumer inflation while changes in YUS record output growth. The data is then manipulated to display the first difference of the log of OIL, YUS and CPUS and these variables are assumed to be I(1) variables. The SUS variable is taken as an I(0) variable (Ouliaris, Pagan & Restrepo, 2018). The data is presented in figure 2.1 below.
 
 
 ```{r Figure1, warning =  FALSE, fig.align = 'center', fig.cap = "Data\\label{Figure1}", fig.height = 5, fig.width = 6, dev = 'png'}
@@ -170,11 +170,9 @@ vardat0 <- vardat0[-c(91),]
 
 plot.ts(vardat0, main="Representation of Data")
 
-
-   
 ```
 
-Peersman (2005) makes use of a four-variable constant-coefficient VAR, with three lags and identifies four shocks. The variables included in the analysis is the first difference of oil prices, output growth measured by the real GDP index, consumer inflation measured by consumer price index and short-term nominal interest rates. The four shocks that are analyzed in this paper is an  shock to oil price and an aggregate demand, aggregate supply, and monetary policy shock.  Therefore, the equation can be presented as follows: 
+Peersman (2005) estimates a four-variable constant-coefficient  vector autpregression (VAR) model, with three lags and identifies four shocks. The variables included in the analysis is the first difference of oil prices, output growth measured by the real GDP index, consumer inflation measured by consumer price index and short-term nominal interest rates. The four shocks that are analyzed in this paper; two supply shocks, one demand shock and one monetary policy shock. The two supply shocks represents a shock to the oil price and a shock to output growth. The demand shock is associated with a shock to consumer inflation (CPUS), while the monetary policy shock is associated with a shock to the short term nominal interest rate. Taking the four varaibles and shocks into account, the equation can be presented as follows: 
 
 \[\begin{bmatrix} \Delta oil_t \\ \Delta y_t \\ \Delta p_t \\ s_t \end{bmatrix} = \Biggl[ I - \sum_{i=1}^{n} A_i \Biggl]^{-1} \begin{bmatrix} b_{11}& b_{12}& b_{13} & b_{14} \\
 b_{21}& b_{22}& b_{23} & b_{24} \\
@@ -185,70 +183,62 @@ Where \(\Delta oil_t\), \(\Delta y_t\) and \(\Delta p_t\) represent the first di
 
 Peersman (2005) assumes that the variables follow a covariance stationary process. He uses the Dickey fuller test to reject the null hypothesis of the existence of a unit root at a 10 percent level for OIL, YUS and CPUS, however, the null hypothesis for interest rates cannot be rejected. Peersman (2005) makes the assumption that interest rates are stationary since the nominal rate cannot have a unit root if both the real rate and inflation are stationary. This assumption will be intensely analyzed in section xx during which I will preform numerous robustness checks. 
 
-The paper makes use of a traditional identification strategy using a combination of short-run and long-run restrictions. For the purpose of this assignment, the short-run and long-run restrictions will be discussed and modelled separately. 
-Peersman (2005) assumes that there is a contemporaneous impact of an oil shock on all variables in the VAR, but no immediate impact of other shocks on oil prices. This assumption is consistent with previous literature. Further Peersman (2005) adds the restrictions that a monetary policy shock has no contemporaneous effect on output, since monetary policy shocks have a temporary effect on output. To model these contemporaneous effects \(b_{12} = b_{13} = b_{14} = b_{24} = 0\). However, to accurately model the contempoarous effects, the VAR needs [(k2-k]/2 restrictions, where k represents the number of variables. This implies that a further two contemporaneous effects are needed to model the short-run and long run restrictions further. I will argue two more contemporaneous effects that are consistent with past literature in the next section. Taking into account only the contemporanous effects that Peersman (2005) specifically specified in his paper, your matrix will change to:
+The paper makes use of a traditional identification strategy using a combination of short-run and long-run restrictions. For the purpose of this assignment, the short-run and long-run restrictions will be discussed and modeled separately. Peersman (2005) assumes that there is a contemporaneous impact of an oil shock on all variables in the VAR, but no immediate impact of other shocks on oil prices. This assumption is consistent with previous literature. Further Peersman (2005) adds the restrictions that a monetary policy shock has no contemporaneous effect on output, since monetary policy shocks have a temporary effect on output. To model these contemporaneous effects \(b_{12} = b_{13} = b_{14} = b_{24} = 0\). However, to accurately model the contempoarous effects, the VAR needs \([k^2-k]/2\) restrictions, where k represents the number of variables. This implies that a further two contemporaneous effects are needed to model the short-run and long run restrictions further. I will argue two more contemporaneous effects that are consistent with past literature in the next section. Taking into account only the contemporanous effects that Peersman (2005) specifically specified in his paper, your matrix will change to:
 
 \[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
 b_{21}& b_{22}& b_{23} & 0 \\
 b_{31}& b_{32}& b_{33} & b_{34} \\
 b_{41}& b_{42}& b_{43} & b_{44} \end{bmatrix} \]
 
-Peersman (2005) follows Blanchard and Quah (1989), Gali (1992) and Gerlach and Smeth (1995) to add long-run restrictions to the model. He assumes that demand and monetary shocks have no long-run impact on the level of real output. Using this approach, demand and monetary policy shocks with permanent effects are therefore labelled as supply shock. 
+Peersman (2005) follows Blanchard and Quah (1989), Gali (1992) and Gerlach and Smeth (1995) to add long-run restrictions to the model. He assumes that demand shock has a permanent zero long-run effect of output growth YUS. Furthermore, Peersman (2005) assumes that monetary shocks has a zero long-run impact on output growth but a non-zero effect of OIL and CPUS. Therefore, your long-run restriction matrix will be represented as follow; 
 
-# Replication 
+\[\ \begin{bmatrix} *& *& *& * \\
+*& *& 0 & 0 \\
+*& *& *& * \\
+*& *& * & * \end{bmatrix} \]
 
-```{r}
+where the zero's represent restrictions. In the next section I present and evaluate impulse response functions that are correlated with the VAR specified by Peersman (2005). 
+
+# Evaluating the Economic Slowdown
+
+In this section, I use Peersman (2005) data on the US to plot impulse response function taking into account the short run and long run restrictions specified.
+
+## Short run restrictions 
+
+In Peersman (2005) he applies four short run restrictions to his VAR. Since we have 4 variables in our VAR, 6 restrictions are required to examine the VAR correctly. Therefore, I add two short run restrictions in additional to Peersmans restrictions. The first restriction I add is that a shock to consumer inflation, a demand shock, has contemporaneous affect on output growth (YUS). Peersman (2005) specifies that a monetary policy shock has no contemporaneous effect on output, and since monetary policy shocks are a combination of money demand and exchange rate shocks, this restriction is valid.
+
+The second restriction I add is that a monetary policy shock has no contemporaneous effect on consumer inflation. This restriction is supported by McMillin (2001) who studied the the effect of monetary policy shocks on macroeconomic variables. McMillin (2001) argued that monetary policy shocks only affect consumer inflation with a lag, therefore there will be no affect in the short-run. Therefore the matrix for the contemporaneous coefficient will have the following formation;
+
+\[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
+b_{21}& b_{22}& 0 & 0 \\
+b_{31}& b_{32}& b_{33} & 0 \\
+b_{41}& b_{42}& b_{43} & b_{44} \end{bmatrix} \]
+
+This matrix expresses that only shocks to OIL can shift OIL contemporaneously. Only shock to OIL and YUS can shift output growth (YUS) contemporaneously. Only shocks to OIL, YUS and CPUS and shift consumer inflation contemporaneously and all shock can affect the interest rate contemporaneously. I will now examine how each variable responds to a the four different shocks, where each structural shock is of size one. First, I will examine the effects of an oil shock. 
+```{r Figure2, warning =  FALSE, fig.align = 'center', fig.cap = "Response of Oil Price\\label{Figure2}", fig.height = 5, fig.width = 6, dev = 'png'}
 
 library(vars)
+library(cowplot)
+library(gridExtra)
 # Using data calculated below. 
 
 # Prove that one lag is optimal. 
 # We want to get a reduced-form VAR to get an appropriate object that is manipulated into the structural form model 
 
-var1 <- VAR(vardat0, p=3, type="const")
+var1 <- VAR(vardat0, p=3, type="both")
+
 
 # apply long run restrictions 
 model1 <- BQ(var1)
-summary(model1)
 
 
-#impulse response functions 
-irf1 <- irf(var1, impulse="YUS", response = "SUS", boot=TRUE, n.ahead =40, ci=0.84, runs=100)
-
-
-plot(irf1)
-
-```
-
-
-
-# Impulse response function 
-
-First thing I need to do is convert the data to a time series object in R. And to do this I need to create a date column. 
-
-The graph below, just shows you the dataset for the US. This is nice because you can see the pattern all the vaaraibles follow. This is not in the paper but might be nice to put in under 'descriptive statistics'. 
-
-Now that I have a nice little graph, I can continue by creating my VAR. WE first look at a simple four variable VAR. These variables are OIL, CPUS, YUS and SUS. This VAR will then be used for my impulse response functions. 
-
-
-# Structural VAR 
-
-Argue that authors do no make use of a simple VAR but rather a structural VAR. 
-
-First VAR analysis that Peersman does is based on conventional zero contemporaneous and long run restrictions. Peersman assumes that there is a contemporaneous impact of an oil shock on all other variables in the system, but no immediate impact of the other shocks on oil 
-
-```{r}
-#WE need to set up a matrix for the contemporaneous impact of an oil shock on all other variables. 
-library(vars)
-
+#contemporanous effects
 a.mat <- diag(4)
-diag(a.mat) <- NA
-a.mat[1,1] <- NA
+diag(a.mat) <- 1
 a.mat[1,2] <- 0
 a.mat[1,3] <- 0
 a.mat[1,4] <- 0
 a.mat[2,1] <- NA
-a.mat[2,2] <- NA
 a.mat[3,1] <- NA
 a.mat[4,1] <- NA
 a.mat[2,3] <- 0
@@ -257,25 +247,198 @@ a.mat[3,2] <- NA
 a.mat[3,4] <- 0
 a.mat[4,2] <- NA
 a.mat[4,3] <- NA
-a.mat[4,4] <- NA
-a.mat[3,3] <- NA
 
-print(a.mat)
 
-#setting up matrix for the identification of individual shocks. 
 b.mat <- diag(4)
 diag(b.mat)<- NA
-print(b.mat)
-var1 <- VAR(vardat0, p=3, type="const")
 
 svar.one <- SVAR(var1, Amat=a.mat, Bmat=b.mat, hessian=TRUE, max.iter=1000)
 
+RESPONSE = "OIL"
+IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
 
-plot(irf(svar.one, impulse = "SUS", response = "SUS", n.ahead=40, boot=TRUE, ortho=TRUE, ci=0.84))
+fits=lapply(IMPULSE, function(i){
+    irf(svar.one,response=RESPONSE,impulse=i,n.ahead=40,ortho=TRUE,boot=TRUE, ci=0.84)
+})
+names(fits) = IMPULSE
+
+plotdf = lapply(names(fits),function(i){
+data.frame(
+  index = 1:nrow(fits[[i]]$irf[[1]]),
+  value=fits[[i]]$irf[[1]][,1],
+  Lower=fits[[i]]$Lower[[1]][,1],
+  Upper=fits[[i]]$Upper[[1]][,1],
+  Impulse = i)
+})
+plotdf=do.call(rbind,plotdf)
+
+a <-ggplot(plotdf,aes(x=index,y=value)) + 
+geom_line() +facet_wrap(~Impulse, scales="free_y") + 
+labs(xlab="",ylab="",title="Oil's Response", subtitle ="Response to all shocks taking contemporanous restrictions into account", caption="Note:\nOwn calculations" ) +
+geom_ribbon(aes(ymin=Lower,ymax=Upper),fill=NA,col="salmon",linetype="dashed") + 
+geom_hline(yintercept=0,col="salmon") + theme_bw()
+
+a
+
+```
+Figure 3.1 shows how oil responds to the four shocks discussed in the previous section. We can derive that no shock has a permanent effect on the price of oil, with a demand shock (CPUS) and supply shock (YUS) increasing the price of oil more than the size of the structural shock in the short run, while a monetary policy shock (SUS) decreases the price of oil. Therefore, the response of oil to the four shocks is insignificant in the long run. A positive demand and supply shock increase the price of oil, which is the same results Peersman (2005) arrived at in his analysis. Figure 3.2 represents output growth response to the four different shocks. 
+```{r Figure3, warning =  FALSE, fig.align = 'center', fig.cap = "Response of Output growth\\label{Figure3}", fig.height = 5, fig.width = 6, dev = 'png'}
+RESPONSE = "YUS"
+IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
+
+fits=lapply(IMPULSE, function(i){
+    irf(svar.one,response=RESPONSE,impulse=i,n.ahead=40,ortho=TRUE,boot=TRUE, ci=0.84)
+})
+names(fits) = IMPULSE
+
+plotdf = lapply(names(fits),function(i){
+data.frame(
+  index = 1:nrow(fits[[i]]$irf[[1]]),
+  value=fits[[i]]$irf[[1]][,1],
+  Lower=fits[[i]]$Lower[[1]][,1],
+  Upper=fits[[i]]$Upper[[1]][,1],
+  Impulse = i)
+})
+plotdf=do.call(rbind,plotdf)
+
+b <-ggplot(plotdf,aes(x=index,y=value)) + 
+geom_line() +facet_wrap(~Impulse, scales="free_y") + 
+labs(xlab="",ylab="",title="Output Growth Response", subtitle ="Response to all shocks taking contemporanous restrictions into account", caption="Note:\nOwn calculations" ) +
+geom_ribbon(aes(ymin=Lower,ymax=Upper),fill=NA,col="salmon",linetype="dashed") + 
+geom_hline(yintercept=0,col="salmon") + theme_bw()
+
+b
+```
+Output growth has a strong negative response to a demand, oil and monetary policy shock, where the pass-through of an demand shock is much slower then the other shocks. 
+A monetary policy shock first has a slight positive effect on output, before it starts diminishing, which is consistent with Khan (2008) analysis. The negative impact that an increase in  oil price has on output growth is also consistent with literature. Jiménez-Rodríguez and Sánchez (2005) found a negative relationship on an increase in oil price on economic activity for oil importing countries. I will now analyse the response of consumer inflation to the four different shocks are displayed in figure 3.4 below
+
+```{r Figure4, warning =  FALSE, fig.align = 'center', fig.cap = "Consumer Expenditure Index\\label{Figure4}", fig.height = 5, fig.width = 6, dev = 'png'}
+RESPONSE = "CPUS"
+IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
+
+fits=lapply(IMPULSE, function(i){
+    irf(svar.one,response=RESPONSE,impulse=i,n.ahead=40,ortho=TRUE,boot=TRUE, ci=0.84)
+})
+names(fits) = IMPULSE
+
+plotdf = lapply(names(fits),function(i){
+data.frame(
+  index = 1:nrow(fits[[i]]$irf[[1]]),
+  value=fits[[i]]$irf[[1]][,1],
+  Lower=fits[[i]]$Lower[[1]][,1],
+  Upper=fits[[i]]$Upper[[1]][,1],
+  Impulse = i)
+})
+plotdf=do.call(rbind,plotdf)
+
+c <-ggplot(plotdf,aes(x=index,y=value)) + 
+geom_line() +facet_wrap(~Impulse, scales="free_y") + 
+labs(xlab="",ylab="",title="Consumer Expenditure Index Response", subtitle ="Taking contemporanous restrictions into account", caption="Note:\nOwn calculations" ) +
+geom_ribbon(aes(ymin=Lower,ymax=Upper),fill=NA,col="salmon",linetype="dashed") + 
+geom_hline(yintercept=0,col="salmon") + theme_bw()
+
+c
+```
+AS seen in Figure 3.4, consumer expenditure index which represents consumer inflation, responds positively to all shocks. The oil price shock has a small and insignificant effect on inflation as the increase in inflation is short-lived. During the 1970's, oil prices increased dramatically which encouraged the adoption of energy-saving technology which lead to the importance of oi decreasing (Bachmeier & Cha, 2011). The positive effect that monetary policy has on inflation is unsurprising as inflation immediately increases in response to an increase in interest rates and then slowly decreases. Therefore, the small effect of an oil shock and monetary policy shock on inflation is consistent with literature. Lastly, the response of interest rates to all four shocks are analysed in figure 3.5 below.
+
+```{r Figure5, warning =  FALSE, fig.align = 'center', fig.cap = "Interest Rate Response\\label{Figure5}", fig.height = 5, fig.width = 6, dev = 'png'}
+RESPONSE = "SUS"
+IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
+
+fits=lapply(IMPULSE, function(i){
+    irf(svar.one,response=RESPONSE,impulse=i,n.ahead=40,ortho=TRUE,boot=TRUE, ci=0.84)
+})
+names(fits) = IMPULSE
+
+plotdf = lapply(names(fits),function(i){
+data.frame(
+  index = 1:nrow(fits[[i]]$irf[[1]]),
+  value=fits[[i]]$irf[[1]][,1],
+  Lower=fits[[i]]$Lower[[1]][,1],
+  Upper=fits[[i]]$Upper[[1]][,1],
+  Impulse = i)
+})
+plotdf=do.call(rbind,plotdf)
+
+d <-ggplot(plotdf,aes(x=index,y=value)) + 
+geom_line() +facet_wrap(~Impulse, scales="free_y") + 
+labs(xlab="",ylab="",title="Interest Rate Response", subtitle ="Taking contemporanous restrictions into account", caption="Note:\nOwn calculations" ) +
+geom_ribbon(aes(ymin=Lower,ymax=Upper),fill=NA,col="salmon",linetype="dashed") + 
+geom_hline(yintercept=0,col="salmon") + theme_bw()
+
+d
+```
+Figure 3.5 replicate Peersman (2005) results as Peersman adds no contemporaneous or long-run restrictions on short-term nominal interest rates. An oil shock increases interest rates temporarily to counterbalance the inflationary pressure. The demand and supply shock has a positive effect on short-term nominal interest rates with the effect slowly diminishing over time. These results are consistent with literature. In the next section, I will analyze the effects of the long run restrictions. 
+
+## Long run restrictions
+
+To implemented the long-run restrictions specified by Peersman (2005), I implement an identification scheme proposed by Blanchard-Quah (1989). In the original model, the assumption is made that demand shock has no effect on the long run levels of output. Peersman (2005) makes the same assumption is his paper. In order to make the implementation of Blachard-Quah successful, I need to make an additional four long run restrictions. I assume that all shocks, except an oil price shock, have no long run impact on the price of oil. Furthermore, I assume that a monetary policy shock has no long run impact on consumer inflation. Therefore, my long run restriction matrix will take the following
+
+
+\[\ \begin{bmatrix} *& 0& 0 & 0\\
+*& *& 0 & 0 \\
+*& *& *& 0 \\
+*& *& * & * \end{bmatrix} \]
+
+```{r}
+var1 <- VAR(vardat0, p=3, type="both")
+
+
+# apply long run restrictions 
+model1 <- BQ(var1)
+summary(model1)
+
+RESPONSE = "CPUS"
+IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
+
+fits=lapply(IMPULSE, function(i){
+    irf(model1,response=RESPONSE,impulse=i,n.ahead=40,ortho=TRUE,boot=TRUE, ci=0.84)
+})
+names(fits) = IMPULSE
+
+plotdf = lapply(names(fits),function(i){
+data.frame(
+  index = 1:nrow(fits[[i]]$irf[[1]]),
+  value=fits[[i]]$irf[[1]][,1],
+  Lower=fits[[i]]$Lower[[1]][,1],
+  Upper=fits[[i]]$Upper[[1]][,1],
+  Impulse = i)
+})
+plotdf=do.call(rbind,plotdf)
+
+a <-ggplot(plotdf,aes(x=index,y=value)) + 
+geom_line() +facet_wrap(~Impulse, scales="free_y") + 
+labs(xlab="",ylab="",title="Oil's Response", subtitle ="Response to all shocks taking long run restrictions into account", caption="Note:\nOwn calculations" ) +
+geom_ribbon(aes(ymin=Lower,ymax=Upper),fill=NA,col="salmon",linetype="dashed") + 
+geom_hline(yintercept=0,col="salmon") + theme_bw()
+
+a
 
 
 ```
+
+
+
+
+# Structural VAR 
+
+Argue that authors do no make use of a simple VAR but rather a structural VAR. 
+
+First VAR analysis that Peersman does is based on conventional zero contemporaneous and long run restrictions. Peersman assumes that there is a contemporaneous impact of an oil shock on all other variables in the system, but no immediate impact of the other shocks on oil 
+
+
 ## ACTUAL PROJECT DTAA
+
+# JB TEST 
+```{r}
+# NOt to sure what I am suppose to do with these results or how to interpret them. 
+
+if(!require(tseries)){install.packages('tseries')}
+library(tseries)
+
+jarque.bera.test(as.numeric(vardat0))
+```
+
 
 
 # Test wether variables are stationary \label{stationary}
@@ -333,14 +496,7 @@ lag
 ```
 
 
-# VAR 
 
-```{r}
-
-# You want to argue here that it is a contant coefficient VAR. Look at replication paper and site. 
-plot(VAR(vardat0, p=1, type ="const"))
-
-```
 # Diagnostic tests and Test statistics
 
 The results for diagnostic test for VAR(1), VAR(2) and VAR(3) are provided in the table below.
@@ -359,32 +515,34 @@ arch1$arch.mul
 
 ```
 
-# Short run restrictions 
-Contemporaneous parameters
-
-There is a contemporaneous impact of an oil shock on all variables but no immediate impact of other shocks on oil 
-
-monetary policy also has no contemporaneous effect on output.
-
-
-Therefore b12=b13=b14=0 and b24=0 (found in Gerts discussion paper)
-
-Note restrictions on matrix K2-k/2. This implies we need six restrictions. 
-Gert paper gives 4 short run and two long run restrictions. Therefore we need to argue two more short run restrictions. 
-
-b23=0 since monetary policy shocks are shocks with a temporary effect on output, and are a combination of monetary policy, money demand an possibly exchange rate shocks, as longs as these shocks have an influence on short term interest rates  
- Monetary policy has no effect on marcro economic variables (CObin, 2012). Therefore b34=0
-
-
-
 # Conclusion
 
 
 \newpage
 
 # References {-}
+Blanchard, O.J., 1989. A traditional interpretation of macroeconomic fluctuations. The American Economic Review, pp.1146-1164.
 
-<div id="refs"></div>
+Jiménez-Rodríguez*, R. and Sánchez, M., 2005. Oil price shocks and real GDP growth: empirical evidence for some OECD countries. Applied economics, 37(2), pp.201-228.
+
+Khan, M. U. H. (2008). Short run effects of an unanticipated change in monetary policy:
+Interpreting macroeconomic dynamics in Pakistan. State Bank of Pakistan Working
+Paper, 22.
+
+Kliesen, K.L., 2003. The 2001 recession: How was it different and what developments may have caused it?.Review-Federal Reserve Bank of Saint Louis, 85(5), pp.23-38.
+
+McMillin, W.D., 2001. The Effects of monetary policy shocks: comparing contemporaneous versus long-run identifying restrictions. Southern Economic Journal, pp.618-636.
+
+Ouliaris, S., Pagan, A. and Restrepo, J., 2016. Quantitative macroeconomic modeling with structural vector autoregressions–an EViews implementation. IHS Global, 13.
+
+Peersman, G., 2005. What caused the early millennium slowdown? Evidence based on vector autoregressions. Journal of Applied Econometrics, 20(2), pp.185-207.
+
+Taylor, J.B., 1998. Monetary policy and the long boom. Federal Reserve Bank of St. Louis Review, 80(6), p.3.
+
+Weller, C., 2002. Lessons from the 1990s: Long‐term growth prospects for the US. New Economy, 9(1), pp.57-61.
+
+
+
 
 
 # Appendix {-}
