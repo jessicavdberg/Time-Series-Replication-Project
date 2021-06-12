@@ -271,8 +271,8 @@ and a critical evaluation of the statistical approach that Peersman
 (2005) choose to analyze possible causes for the economic slowdown of
 the US.
 
-\hypertarget{literature-review}{%
-\subsection{Literature Review}\label{literature-review}}
+\hypertarget{theory-of-paper}{%
+\subsection{Theory of Paper}\label{theory-of-paper}}
 
 The 1990s was the start of an economic boom for the United States as
 they experienced the unusual combination of rapid output growth and
@@ -344,7 +344,7 @@ Pagan \& Restrepo, 2018). The data is presented in figure 2.1 below.
 \end{figure}
 
 Peersman (2005) estimates a four-variable constant-coefficient vector
-autpregression (VAR) model, with three lags and identifies four shocks.
+autoregression (VAR) model, with three lags and identifies four shocks.
 The variables included in the analysis is the first difference of oil
 prices, output growth measured by the real GDP index, consumer inflation
 measured by consumer price index and short-term nominal interest rates.
@@ -375,27 +375,23 @@ OIL, YUS and CPUS, however, the null hypothesis for interest rates
 cannot be rejected. Peersman (2005) makes the assumption that interest
 rates are stationary since the nominal rate cannot have a unit root if
 both the real rate and inflation are stationary. This assumption will be
-intensely analyzed in section xx during which I will preform numerous
+intensely analyzed in section 4 during which I will preform numerous
 robustness checks.
 
 The paper makes use of a traditional identification strategy using a
-combination of short-run and long-run restrictions. For the purpose of
-this assignment, the short-run and long-run restrictions will be
-discussed and modeled separately. Peersman (2005) assumes that there is
-a contemporaneous impact of an oil shock on all variables in the VAR,
-but no immediate impact of other shocks on oil prices. This assumption
-is consistent with previous literature. Further Peersman (2005) adds the
-restrictions that a monetary policy shock has no contemporaneous effect
-on output, since monetary policy shocks have a temporary effect on
-output. To model these contemporaneous effects
+combination of short-run and long-run restrictions. Peersman (2005)
+assumes that there is a contemporaneous impact of an oil shock on all
+variables in the VAR, but no immediate impact of other shocks on oil
+prices. This assumption is consistent with previous literature. Further
+Peersman (2005) adds the restrictions that a monetary policy shock has
+no contemporaneous effect on output, since monetary policy shocks have a
+temporary effect on output. To model these contemporaneous effects
 \(b_{12} = b_{13} = b_{14} = b_{24} = 0\). However, to accurately model
 the contempoarous effects, the VAR needs \([k^2-k]/2\) restrictions,
 where k represents the number of variables. This implies that a further
-two contemporaneous effects are needed to model the short-run and long
-run restrictions further. I will argue two more contemporaneous effects
-that are consistent with past literature in the next section. Taking
-into account only the contemporanous effects that Peersman (2005)
-specifically specified in his paper, your matrix will change to:
+two restrictions are needed in order to model the VAR successfully,
+which will be long run restrictions. The contemporaneous matrix that
+include only short run restrictions is presented below;
 
 \[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
 b_{21}& b_{22}& b_{23} & 0 \\
@@ -419,47 +415,48 @@ where the zero's represent restrictions. In the next section I present
 and evaluate impulse response functions that are correlated with the VAR
 specified by Peersman (2005).
 
-\hypertarget{evaluating-the-economic-slowdown}{%
-\section{Evaluating the Economic
-Slowdown}\label{evaluating-the-economic-slowdown}}
+\hypertarget{replication}{%
+\section{Replication}\label{replication}}
 
-In this section, I use Peersman (2005) data on the US to plot impulse
-response function taking into account the short run and long run
-restrictions specified.
+In this section, I use Peersman (2005) data on the US to evaluate the
+VAR by plotting impulse response function, 40 periods ahead, with an
+84th and 16th percent confidence band. In Peersman (2005) paper, he
+applies four short run restrictions to his VAR and two long-run
+restrictions, adding up to the necessary 6 restrictions that is needed
+for the evaluation. In this section, I examine each variables response
+to the different shocks and compare them to Peersman (2005) results
+\footnote{Peersman (2005) original results are displayed in appendix A}.
 
-\hypertarget{short-run-restrictions}{%
-\subsection{Short run restrictions}\label{short-run-restrictions}}
+Under the restrictions specified by Peersman (2005), an oil price shock
+is interpreted as an shock to oil price (OIL), a demand shock is
+interpreted as a shock to the consumer expenditure index (CPUS), a
+supply shock is interpreted as a shock to output growth (YUS) and a
+monetary policy shock is interpreted as a shock to the short term
+nominal interest rate (SUS).
 
-In Peersman (2005) he applies four short run restrictions to his VAR.
-Since we have 4 variables in our VAR, 6 restrictions are required to
-examine the VAR correctly. Therefore, I add two short run restrictions
-in additional to Peersmans restrictions. The first restriction I add is
-that a shock to consumer inflation, a demand shock, has contemporaneous
-affect on output growth (YUS). Peersman (2005) specifies that a monetary
-policy shock has no contemporaneous effect on output, and since monetary
-policy shocks are a combination of money demand and exchange rate
-shocks, this restriction is valid.
+\hypertarget{oils-response}{%
+\subsection{Oil's response}\label{oils-response}}
 
-The second restriction I add is that a monetary policy shock has no
-contemporaneous effect on consumer inflation. This restriction is
-supported by McMillin (2001) who studied the the effect of monetary
-policy shocks on macroeconomic variables. McMillin (2001) argued that
-monetary policy shocks only affect consumer inflation with a lag,
-therefore there will be no affect in the short-run. Therefore the matrix
-for the contemporaneous coefficient will have the following formation;
+Oil is one of the most important commodities in the world. A lower oil
+price benefits consumer as it provides cheaper traveling cost and a
+lower price of gasoline. The oil price also impacts the price of many
+manufactured goods, therefore it affects every consumer. Thus, it is
+important to understand how the oil price will respond to different
+types of shocks. Figure 3.1 shows that there is a permanent effect on
+the price of oil for all shocks. The oil price increases after a
+positive demand shock and decrease for a restrictive monetary policy
+shock. A positive oil shock increases the price of oil. These results
+coincides with Peersman (2005) results.
 
-\[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
-b_{21}& b_{22}& 0 & 0 \\
-b_{31}& b_{32}& b_{33} & 0 \\
-b_{41}& b_{42}& b_{43} & b_{44} \end{bmatrix} \]
-
-This matrix expresses that only shocks to OIL can shift OIL
-contemporaneously. Only shock to OIL and YUS can shift output growth
-(YUS) contemporaneously. Only shocks to OIL, YUS and CPUS and shift
-consumer inflation contemporaneously and all shock can affect the
-interest rate contemporaneously. I will now examine how each variable
-responds to a the four different shocks, where each structural shock is
-of size one. First, I will examine the effects of an oil shock.
+There is also a permanent effect on the price of oil for a supply shock,
+which contradicts Peersman (2005) results as he found only a temporary
+increase in the price of oil after a supply shock. Theoretically, demand
+and supply shocks have different impacts on the price of oil, where
+demand shocks are usually more persistent with a larger impact than
+supply shocks. However, in Figure 3.1, it is observed that they have
+similar impacts. Therefore, based on my results and Peersman (2005)
+results, I argue that the effects of a supply shock on oil price is
+ambiguous.
 
 \begin{figure}[H]
 
@@ -470,16 +467,25 @@ of size one. First, I will examine the effects of an oil shock.
 \caption{Response of Oil Price\label{Figure2}}\label{fig:Figure2}
 \end{figure}
 
-Figure 3.1 shows how oil responds to the four shocks discussed in the
-previous section. We can derive that no shock has a permanent effect on
-the price of oil, with a demand shock (CPUS) and supply shock (YUS)
-increasing the price of oil more than the size of the structural shock
-in the short run, while a monetary policy shock (SUS) decreases the
-price of oil. Therefore, the response of oil to the four shocks is
-insignificant in the long run. A positive demand and supply shock
-increase the price of oil, which is the same results Peersman (2005)
-arrived at in his analysis. Figure 3.2 represents output growth response
-to the four different shocks.
+\hypertarget{output-growth-response}{%
+\subsection{Output Growth Response}\label{output-growth-response}}
+
+To implemented the long-run restrictions specified by Peersman (2005) on
+output growth, I implement an identification scheme proposed by
+Blanchard-Quah (1989). In Blanchard-Quah original model, the assumption
+is made that demand shock has no effect on the long run levels of
+output. Peersman (2005) makes the same assumption is his papers and also
+assumes that monetary policy shocks have no impact on output growth in
+the long run. As can be seen in Figure 3.2, my results for the response
+of outgrowth for different shocks are an exact replication of Peersman
+(2005) results.
+
+Figure 3.2 shows that output growth responds negatively to an oil shock,
+and positively to a demand and monetary policy shock. Additionally, a
+demand and monetary policy shock only have a temporary effect on output
+growth where the effect of a demand shock is longer lasting. Therefore,
+a monetary policy shock has a rather insignificant effect on output
+growth where as a demand shock boost economic growth.
 
 \begin{figure}[H]
 
@@ -490,16 +496,29 @@ to the four different shocks.
 \caption{Response of Output growth\label{Figure3}}\label{fig:Figure3}
 \end{figure}
 
-Output growth has a strong negative response to a demand, oil and
-monetary policy shock, where the pass-through of an demand shock is much
-slower then the other shocks. A monetary policy shock first has a slight
-positive effect on output, before it starts diminishing, which is
-consistent with Khan (2008) analysis. The negative impact that an
-increase in oil price has on output growth is also consistent with
-literature. Jiménez-Rodríguez and Sánchez (2005) found a negative
-relationship on an increase in oil price on economic activity for oil
-importing countries. I will now analyse the response of consumer
-inflation to the four different shocks are displayed in figure 3.4 below
+\hypertarget{consumer-expenditure-index-response}{%
+\subsection{Consumer Expenditure Index
+Response}\label{consumer-expenditure-index-response}}
+
+Figure 3.3 shows the response of consumer inflation to all four shocks.
+These results are identical to Peersman (2005) results except for the
+effect of a monetary policy shock on consumer prices. An oil shock and a
+demand shock has a strong, positive, long run effect on consumer prices.
+This makes theoretical sense, a demand shock insinuates that consumers
+want to consumer more, hence they are willing to pay more and therefore
+consumer prices increases. Furthermore, Gao, Kim, and Saba (2014) found
+a positive effect of an oil price shock on total CPI which in mainly
+attributed to the positive effect on energy intensive CPI. Therefore,
+Goa, Kim and Saba (2014) supports Peersman (2005) results.
+
+A supply shock has a strong, negative long-run effect on consumer
+inflation. One example of this is when an positive supply shock occurs
+due to an increase in money supply. This benefits consumers and
+institutions in the short run but as a negative long run effect since
+money purchasing power decreases. On the other hand, a monetary policy
+shock seems to have no long-run impact on inflation. This result is
+concerning as it contradicts Peersman (2005) results of a permanent
+negative effect on inflation.
 
 \begin{figure}[H]
 
@@ -510,18 +529,9 @@ inflation to the four different shocks are displayed in figure 3.4 below
 \caption{Consumer Expenditure Index\label{Figure4}}\label{fig:Figure4}
 \end{figure}
 
-AS seen in Figure 3.4, consumer expenditure index which represents
-consumer inflation, responds positively to all shocks. The oil price
-shock has a small and insignificant effect on inflation as the increase
-in inflation is short-lived. During the 1970's, oil prices increased
-dramatically which encouraged the adoption of energy-saving technology
-which lead to the importance of oi decreasing (Bachmeier \& Cha, 2011).
-The positive effect that monetary policy has on inflation is
-unsurprising as inflation immediately increases in response to an
-increase in interest rates and then slowly decreases. Therefore, the
-small effect of an oil shock and monetary policy shock on inflation is
-consistent with literature. Lastly, the response of interest rates to
-all four shocks are analysed in figure 3.5 below.
+\hypertarget{short-term-nominal-interest-rate-response}{%
+\section{Short Term Nominal Interest Rate
+Response}\label{short-term-nominal-interest-rate-response}}
 
 \begin{figure}[H]
 
@@ -541,211 +551,187 @@ effect slowly diminishing over time. These results are consistent with
 literature. In the next section, I will analyze the effects of the long
 run restrictions.
 
-\hypertarget{long-run-restrictions}{%
-\subsection{Long run restrictions}\label{long-run-restrictions}}
+\hypertarget{robustness-checks}{%
+\section{Robustness checks}\label{robustness-checks}}
 
-To implemented the long-run restrictions specified by Peersman (2005), I
-implement an identification scheme proposed by Blanchard-Quah (1989). In
-the original model, the assumption is made that demand shock has no
-effect on the long run levels of output. Peersman (2005) makes the same
-assumption is his paper. In order to make the implementation of
-Blachard-Quah successful, I need to make an additional four long run
-restrictions. I assume that all shocks, except an oil price shock, have
-no long run impact on the price of oil. Furthermore, I assume that a
-monetary policy shock has no long run impact on consumer inflation.
-Therefore, my long run restriction matrix will take the following
+After revisiting Peersman (2005) paper, I will now apply numerous
+diagnostic and robustness test to determine whether a four-variable
+VAR(3) is an accurate representation of the data generating process. I
+first analyze the optimal lag length for the model. Then I do this and
+that.
 
-\[\ \begin{bmatrix} *& 0& 0 & 0\\
-*& *& 0 & 0 \\
-*& *& *& 0 \\
-*& *& * & * \end{bmatrix} \]
+\hypertarget{optimal-lag-length}{%
+\subsection{Optimal lag length}\label{optimal-lag-length}}
 
-\begin{verbatim}
-## 
-## SVAR Estimation Results:
-## ======================== 
-## 
-## Call:
-## BQ(x = var1)
-## 
-## Type: Blanchard-Quah 
-## Sample size: 87 
-## Log Likelihood: -502.179 
-## 
-## Estimated contemporaneous impact matrix:
-##          OIL     YUS     CPUS       SUS
-## OIL  13.8703 -0.8422 -3.19122 -0.326634
-## YUS   0.1397  0.3491  0.33881  0.242206
-## CPUS  0.1342 -0.1235  0.12428 -0.004864
-## SUS   0.1812 -0.1276  0.06633  0.788211
-## 
-## Estimated identified long run impact matrix:
-##          OIL     YUS   CPUS   SUS
-## OIL  16.4082  0.0000 0.0000 0.000
-## YUS  -0.3533  1.0986 0.0000 0.000
-## CPUS  0.5276 -0.4113 0.3416 0.000
-## SUS   3.9763 -0.5584 3.7042 2.696
-## 
-## Covariance matrix of reduced form residuals (*100):
-##          OIL    YUS    CPUS     SUS
-## OIL  20338.5 48.297 157.038 215.145
-## YUS     48.3 31.487   1.657  19.415
-## CPUS   157.0  1.657   4.872   4.448
-## SUS    215.1 19.415   4.448  67.478
-\end{verbatim}
+Estimating a lag length for a VAR time series model is a critical
+econometric exercise as one runs the risk of over or under estimation
+(Liew, 2004). The model specified in the paper uses a lag length of 3.
+There are four different criteria's that one can analyze to decided on
+an optimal lag length: the Akaike Information Criterion (AIC), the
+Schwarz Criterion (SC), the Hannan Quinn (HQ) and the Final Prediction
+Error (FPE).
 
-\includegraphics{replication_files/figure-latex/unnamed-chunk-1-1.pdf}
+As can be seen in the table below, Peersman (2005) chose the FPE lag
+criteria to choose on an optimal lag length. The table alwso shows that
+there is a large discrepancy between the VAR(10) selected by the AIC and
+the VAR(1) and VAR(3) selected by the other criterion. This result is
+not unusual as AIC usually chooses a larger number of lags. Therefore,
+it is preferred to not use the AIC criteria when choosing a number a
+lags.
 
-\hypertarget{structural-var}{%
-\section{Structural VAR}\label{structural-var}}
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+ AIC(n) & HQ(n) & SC(n) & FPE(n) \\ 
+ \hline
+ 10 & 1 & 1 & 3\\ 
+ \hline
+\end{tabular}
+\end{center}
 
-Argue that authors do no make use of a simple VAR but rather a
-structural VAR.
+Liew (2004) conducted a study where he critically analyzed which lag
+length criteria should be used to determine the VAR lag length.He
+concluded that AIC and FPE produce the least probability of under
+estimation when compared to the other selection criteria. Since I have
+already argued that AIC is not the best lag length criteria for this VAR
+model, I agree with Peersman (2020) choice of using FPE to decide on a
+lag length of three.
 
-First VAR analysis that Peersman does is based on conventional zero
-contemporaneous and long run restrictions. Peersman assumes that there
-is a contemporaneous impact of an oil shock on all other variables in
-the system, but no immediate impact of the other shocks on oil
+\hypertarget{test-for-stationary}{%
+\subsection{\texorpdfstring{Test for Stationary
+\label{stationary}}{Test for Stationary }}\label{test-for-stationary}}
 
-\hypertarget{actual-project-dtaa}{%
-\subsection{ACTUAL PROJECT DTAA}\label{actual-project-dtaa}}
+Stationarity is a dominant principle in time series analysis. Stationary
+implies that the statistical properties of a time series variable do not
+change over time. It is important to know whether your variables are
+stationary as many of the econometric test that you reply on require
+variables to be stationary. To analyze whether the data is stationary, I
+plot the autocorrelation function (ACF) for each variable. On the x-axis
+you will have the number of lags and on the y-axis you will have your
+autocorrelation value. If the variable is stationary, the ACF will
+degrade to zero quickly, whereas if they are non-stationary they will
+slowly diminish as the number of lags increase. As seen in figure 4.1
+below, the ACF plot implies that OIL and YUS are stationary variables
+where CPUS and YUS are non-stationary variables.
 
-\hypertarget{jb-test}{%
-\section{JB TEST}\label{jb-test}}
+\includegraphics{ACF.jpg} To further investigate the stationarity of the
+dataset, I preform the Augmented Dickey Fuller (ADF)test, with no trend
+since we detrended our variables. The ADF test is a unit root test for
+stationarity. I want to test for a unit root since a unit root can bring
+about an unpredictable result in your time series analysis. The ADF test
+null hypothesis is that there is a unit root present, where the
+alternative hypothesis is that the time series is stationary. The
+results of the ADF test are given in the table below:
 
-\begin{verbatim}
-## 
-##  Jarque Bera Test
-## 
-## data:  as.numeric(vardat0)
-## X-squared = 5795.9, df = 2, p-value < 2.2e-16
-\end{verbatim}
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ variable & ADF statistic & P-value \\ 
+ \hline
+ OIL & -5.02 & 0.01\\ 
+ YUS & -4.50 & 0.01 \\
+ CPUS & -3.64 & 0.01 \\
+ SUS & -1.09 & 0.2859 \\
+ \hline
+\end{tabular}
+\end{center}
 
-\hypertarget{test-wether-variables-are-stationary}{%
-\section{\texorpdfstring{Test wether variables are stationary
-\label{stationary}}{Test wether variables are stationary }}\label{test-wether-variables-are-stationary}}
+From this table, we can reject the null hypothesis of a unit root being
+present for OIL, YUS and CPUS implying that the variables are
+stationary, but we fail to reject the null hypothesis for SUS. The ADF
+test results need to be interpreted with caution since it has a high
+type I error rate. A type I error is the false rejection of the null
+hypothesis. Therefore, I also make use of another unit root test, the
+Phillips-Perron (PP) test.
 
-Variables that are included in the dataset (same order): oil, output
-growth, consumer inflation and short-term nominal interest rate for EU
-and US.
+The PP test corrects for any serial correlation and heteroskedasiticy by
+building onto the ADF results. Although the ADF test are more widely
+used, the PP tests are more robust to general forms of
+heteroskedasticity in the error term. Therefore, it is an appropriate
+statistic to analyze to determine stationarity. The null hypothesis is
+that same as the ADF test, that the time series has a unit root, where
+the alternative hypothesis would be that the time series is stationary.
+The results for the PP test is displayed in the table below.
 
-Gideon suggested I only do the replication for the US, since this will
-be a lot of work.
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ variable & PP statistic & P-value \\ 
+ \hline
+ OIL & -66.5 & 0.01\\ 
+ YUS & -56.3 & 0.01 \\
+ CPUS & -17 & 0.01 \\
+ SUS & -7.25 & 0.0632 \\
+ \hline
+\end{tabular}
+\end{center}
 
-In order to test whether a variable is stationary, you can use a unit
-root test such as the Dickey-Fuller (DF) test
+Analyzing the results for the PP test, we reach the exact same
+conclusion as with the ADF test. Therefore, after plotting the
+autocorrelation function and analyzing two unit root test, we reach the
+same conclusion that Peersman (2005) reached in his paper. For OIL, YUS
+and CPUS we reject the null hypothesis of a unit root and concluded that
+the time series variables are stationary, even though the ACF shows
+contradicting results for CPUS.
 
-Null hypothesis: There is a unit root Alternative hypothesis: Time
-series is stationary
+In all three test preformed reach the same conclusion that SUS is
+non-stationary which is supported by Peersman (2005) results. However,
+Gerlach and Smets (1995) agrue that the nominal rate cannot have a unit
+root when both the real rate and inflation are stationary. Therefore,
+the non-staionary result is not of concern.
 
-If p-values is less than 0.05, it means we can reject the null
-hypothesis.
+\hypertarget{test-for-heteroscedascity}{%
+\subsection{Test for heteroscedascity}\label{test-for-heteroscedascity}}
 
-\begin{verbatim}
-## 
-##  Augmented Dickey-Fuller Test
-## 
-## data:  x$OIL
-## Dickey-Fuller = -5.5461, Lag order = 4, p-value = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
+\hypertarget{test-for-cointegration}{%
+\subsection{Test for cointegration}\label{test-for-cointegration}}
 
-\begin{verbatim}
-## 
-##  Augmented Dickey-Fuller Test
-## 
-## data:  x$YUS
-## Dickey-Fuller = -4.0998, Lag order = 4, p-value = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
+We say that two time series are cointegrated if they have similar
+trends. We conduct a cointegration test to assess whether the residuals
+from regressing one series onto another is stationary. The residuals
+will be stationary if the times series are cointegrated. I will use the
+Engle-Granger (EG) test, where the null hypothesis is that no
+cointegration exist.
 
-\begin{verbatim}
-## 
-##  Augmented Dickey-Fuller Test
-## 
-## data:  x$SUS
-## Dickey-Fuller = -3.1218, Lag order = 4, p-value = 0.1143
-## alternative hypothesis: stationary
-\end{verbatim}
+each of which is I(1), are not cointegrated.
 
-\begin{verbatim}
-## 
-##  Augmented Dickey-Fuller Test
-## 
-## data:  x$CPUS
-## Dickey-Fuller = -4.7117, Lag order = 4, p-value = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
+\hypertarget{granger-causality}{%
+\subsection{Granger Causality}\label{granger-causality}}
 
-\begin{verbatim}
-## 
-##  Phillips-Perron Unit Root Test
-## 
-## data:  x$OIL
-## Dickey-Fuller Z(alpha) = -66.677, Truncation lag parameter = 3, p-value
-## = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
+We would now like to know whether changes in one variable will have a
+effect on changes in other variables in the dataset. The granger
+causality test is a test done to determine whether on time series
+variable is useful in forecasting another. We say that one time series
+variables (x) granger-causes another time series variable (y) if it
+depends on its own past values as well as the past values of x. For
+predicting y, we then need to look at the past values of y and the past
+values of x. The null hypothesis for the Granger Causaily test is that
+the variable specified does not granger-cause any of the other variables
+in the dataset. The results are shown in the table below.
 
-\begin{verbatim}
-## 
-##  Phillips-Perron Unit Root Test
-## 
-## data:  x$YUS
-## Dickey-Fuller Z(alpha) = -56.833, Truncation lag parameter = 3, p-value
-## = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ cause variable & F-stat & P-value \\ 
+ \hline
+ OIL & 2.8941 & 0.002711\\ 
+ YUS & 3.5067 & 0.0003864 \\
+ CPUS & 6.9537 & 4.293e-09\\
+ SUS & 4.4792 & 1.5995-o5 \\
+ \hline
+\end{tabular}
+\end{center}
 
-\begin{verbatim}
-## 
-##  Phillips-Perron Unit Root Test
-## 
-## data:  x$SUS
-## Dickey-Fuller Z(alpha) = -15.957, Truncation lag parameter = 3, p-value
-## = 0.1816
-## alternative hypothesis: stationary
-\end{verbatim}
+For all cause variables, we reject the null hypothesis that the
+cause-variable does not granger-cause on any of the other time series
+variables.Therefore, we can derive the following results:
 
-\begin{verbatim}
-## 
-##  Phillips-Perron Unit Root Test
-## 
-## data:  x$CPUS
-## Dickey-Fuller Z(alpha) = -27.881, Truncation lag parameter = 3, p-value
-## = 0.01
-## alternative hypothesis: stationary
-\end{verbatim}
-
-\#Optimal lag length
-
-I now determine the optimal lag length for an unrestricted VAR with a
-maximum lag length of 10.
-
-According to the AIC and the FPE, the optimal lag length is 4. However,
-the SC and HQ criterion indicates an optimal lag length of 1. The data
-estimates a VAR including a constant and a trend as deterministic
-regressor.
-
-I will use a VAR with lag length eual to one as specified by the paper.
-
-\begin{verbatim}
-## $selection
-## AIC(n)  HQ(n)  SC(n) FPE(n) 
-##      2      2      1      2 
-## 
-## $criteria
-##                  1          2          3          4          5          6
-## AIC(n) -0.33015958 -0.6286755 -0.5641153 -0.5631453 -0.3447481 -0.1678686
-## HQ(n)  -0.04365279 -0.1511641  0.1044006  0.2963751  0.7057768  1.0736608
-## SC(n)   0.38444841  0.5623378  1.1033034  1.5806787  2.2754812  2.9287660
-## FPE(n)  0.71962087  0.5361090  0.5772066  0.5875388  0.7507903  0.9323487
-##                 7          8          9         10
-## AIC(n) 0.01651095 -0.2157611 -0.3324915 -0.5683809
-## HQ(n)  1.44904491  1.4077774  1.4820515  1.4371666
-## SC(n)  3.58955090  3.8336842  4.1933591  4.4338750
-## FPE(n) 1.18570839  1.0145723  0.9995686  0.9024505
-\end{verbatim}
+\begin{enumerate}
+\item The hypothesis that the oil price does not influence the real GDP index, the consumer expenditure index and the short term nominal interest rate is rejected. This implies that the oil price does influences the US economy. 
+\item The hypothesis that the real GDP index does not influence oil price, the consumer expenditure index and the short term nominal interest rate is rejected. This implies that real GDP has an effect on the US economy as well as the oil price, which greatly affects countries that are net importers of oil. 
+\item The hypothesis that the consumer expenditure index does not influence the real GDP index, the oil price and the short term nominal interest rate is rejected. This implies that the US citizens spending patterns and behaviors affect the US economy as well as the oil price. 
+\item The hypothesis that the short term nominal interest rate does not influence the real GDP index, the consumer expenditure index and the oil price is rejected. This implies that monetary policy greatly affects the US economy and has an affect on the oil price.
+\end{enumerate}
 
 \hypertarget{diagnostic-tests-and-test-statistics}{%
 \section{Diagnostic tests and Test
@@ -757,47 +743,6 @@ provided in the table below.
 Here you look and interpret all the test to determine whether VAR(1) is
 too restrictive. ARGUE this as part of your robustness test for the
 paper.
-
-\begin{verbatim}
-## 
-##  Portmanteau Test (asymptotic)
-## 
-## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
-## Chi-squared = 232.87, df = 240, p-value = 0.6172
-\end{verbatim}
-
-\begin{verbatim}
-## $JB
-## 
-##  JB-Test (multivariate)
-## 
-## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
-## Chi-squared = 202.43, df = 8, p-value < 2.2e-16
-## 
-## 
-## $Skewness
-## 
-##  Skewness only (multivariate)
-## 
-## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
-## Chi-squared = 20.322, df = 4, p-value = 0.0004313
-## 
-## 
-## $Kurtosis
-## 
-##  Kurtosis only (multivariate)
-## 
-## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
-## Chi-squared = 182.11, df = 4, p-value < 2.2e-16
-\end{verbatim}
-
-\begin{verbatim}
-## 
-##  ARCH (multivariate)
-## 
-## data:  Residuals of VAR object VAR(vardat0, p = 1, type = "const")
-## Chi-squared = 615.75, df = 500, p-value = 3e-04
-\end{verbatim}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
@@ -811,6 +756,12 @@ paper.
 Blanchard, O.J., 1989. A traditional interpretation of macroeconomic
 fluctuations. The American Economic Review, pp.1146-1164.
 
+Gao, L., Kim, H. and Saba, R., 2014. How do oil price shocks affect
+consumer prices?. Energy Economics, 45, pp.313-323.
+
+Gerlach S, Smets F. 1995. The monetary transmission mechanism: evidence
+from the G7 countries. CEPR Discussion Paper, 1219.
+
 Jiménez-Rodríguez*, R. and Sánchez, M., 2005. Oil price shocks and real
 GDP growth: empirical evidence for some OECD countries. Applied
 economics, 37(2), pp.201-228.
@@ -823,9 +774,8 @@ Kliesen, K.L., 2003. The 2001 recession: How was it different and what
 developments may have caused it?.Review-Federal Reserve Bank of Saint
 Louis, 85(5), pp.23-38.
 
-McMillin, W.D., 2001. The Effects of monetary policy shocks: comparing
-contemporaneous versus long-run identifying restrictions. Southern
-Economic Journal, pp.618-636.
+Liew, V.K.S., 2004. Which lag length selection criteria should we
+employ?. Economics bulletin, 3(33), pp.1-9.
 
 Ouliaris, S., Pagan, A. and Restrepo, J., 2016. Quantitative
 macroeconomic modeling with structural vector autoregressions--an EViews
@@ -849,7 +799,11 @@ the US. New Economy, 9(1), pp.57-61.
 \subsection*{Appendix A}\label{appendix-a}}
 \addcontentsline{toc}{subsection}{Appendix A}
 
-Some appendix information here
+\begin{figure}
+\centering
+\includegraphics{Capture.jpg}
+\caption{Peersman orignial results}
+\end{figure}
 
 \hypertarget{appendix-b}{%
 \subsection*{Appendix B}\label{appendix-b}}

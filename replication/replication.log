@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  12 JUN 2021 02:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  13 JUN 2021 00:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -789,7 +789,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-<replication_files/figure-latex/Figure1-1.png, id=95, 433.62pt x 361.35pt>
+<replication_files/figure-latex/Figure1-1.png, id=111, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure1-1.png  used on 
@@ -822,6 +822,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
+<replication_files/figure-latex/Figure2-1.png, id=135, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure2-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure2-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure2-1.png  used on 
+input line 463.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -831,18 +837,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6]
-<replication_files/figure-latex/Figure2-1.png, id=124, 433.62pt x 361.35pt>
-File: replication_files/figure-latex/Figure2-1.png Graphic file (type png)
-<use replication_files/figure-latex/Figure2-1.png>
-Package pdftex.def Info: replication_files/figure-latex/Figure2-1.png  used on 
-input line 466.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/Figure3-1.png, id=125, 433.62pt x 361.35pt>
-File: replication_files/figure-latex/Figure3-1.png Graphic file (type png)
-<use replication_files/figure-latex/Figure3-1.png>
-Package pdftex.def Info: replication_files/figure-latex/Figure3-1.png  used on 
-input line 486.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -852,11 +846,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7 <./replication_files/figure-latex/Figure2-1.png>]
-<replication_files/figure-latex/Figure4-1.png, id=133, 433.62pt x 361.35pt>
-File: replication_files/figure-latex/Figure4-1.png Graphic file (type png)
-<use replication_files/figure-latex/Figure4-1.png>
-Package pdftex.def Info: replication_files/figure-latex/Figure4-1.png  used on 
-input line 506.
+<replication_files/figure-latex/Figure3-1.png, id=152, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure3-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure3-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure3-1.png  used on 
+input line 492.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -867,11 +861,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [8 <./replication_files/figure-latex/Figure3-1.png>]
-<replication_files/figure-latex/Figure5-1.png, id=140, 433.62pt x 361.35pt>
+<replication_files/figure-latex/Figure4-1.png, id=160, 433.62pt x 361.35pt>
+File: replication_files/figure-latex/Figure4-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure4-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure4-1.png  used on 
+input line 525.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+<replication_files/figure-latex/Figure5-1.png, id=161, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure5-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure5-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure5-1.png  used on 
-input line 528.
+input line 538.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -891,6 +891,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [10 <./replication_files/figure-latex/Figure5-1.png>]
+<ACF.jpg, id=178, 433.62pt x 361.35pt>
+File: ACF.jpg Graphic file (type jpg)
+<use ACF.jpg>
+Package pdftex.def Info: ACF.jpg  used on input line 617.
+(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
+
+Underfull \hbox (badness 4156) in paragraph at lines 617--625
+[][] \T1/lmr/m/n/10.95 To fur-
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -900,14 +910,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [11]
-<replication_files/figure-latex/unnamed-chunk-1-1.pdf, id=159, 433.62pt x 361.3
-5pt>
-File: replication_files/figure-latex/unnamed-chunk-1-1.pdf Graphic file (type p
-df)
-<use replication_files/figure-latex/unnamed-chunk-1-1.pdf>
-Package pdftex.def Info: replication_files/figure-latex/unnamed-chunk-1-1.pdf  
-used on input line 597.
-(pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -916,7 +918,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12 <./replication_files/figure-latex/unnamed-chunk-1-1.pdf>]
+[12 <./ACF.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -944,6 +946,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15]
+<Capture.jpg, id=210, 478.78876pt x 451.6875pt>
+File: Capture.jpg Graphic file (type jpg)
+<use Capture.jpg>
+Package pdftex.def Info: Capture.jpg  used on input line 804.
+(pdftex.def)             Requested size: 478.78758pt x 451.68639pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -953,15 +960,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[17]
 No file replication.bbl.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -971,18 +969,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[18] (./replication.aux)
+[17 <./Capture.JPG>] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: 24747C5E4297A6DB4744D6D20A8DEF84;2447.
+(rerunfilecheck)             Checksum: F6CD7B21113BC593539B3A6DF3BB087A;3155.
  ) 
 Here is how much of TeX's memory you used:
- 15331 strings out of 480496
- 271617 string characters out of 5897906
- 559463 words of memory out of 5000000
- 32698 multiletter control sequences out of 15000+600000
- 458747 words of font info for 67 fonts, out of 8000000 for 9000
+ 15360 strings out of 480496
+ 271775 string characters out of 5897906
+ 560637 words of memory out of 5000000
+ 32713 multiletter control sequences out of 15000+600000
+ 458428 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,80p,290b,906s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,12n,80p,353b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mat
 hsy.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
@@ -996,20 +994,20 @@ st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/tex
 mf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX
 /texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/jesic/AppData/Roaming/Tin
 yTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/jesic/AppData/Roaming
-/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/Roam
-ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/jesic/AppData/R
-oaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/jesic/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/Users/jesic/
-AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users/je
-sic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Use
-rs/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:
-/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pf
-b><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt
-9.pfb>
-Output written on replication.pdf (18 pages, 339162 bytes).
+/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/jesic/AppData/Roam
+ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/R
+oaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/jesic/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/jesic/A
+ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/Users/jes
+ic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users
+/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/
+Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
+<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.
+pfb>
+Output written on replication.pdf (17 pages, 474980 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 228 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
- 167 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 317 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 72 named destinations out of 1000 (max. 500000)
+ 204 words of extra memory for PDF output out of 10000 (max. 10000000)
 
