@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  13 JUN 2021 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  13 JUN 2021 01:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,7 +871,7 @@ input line 525.
 File: replication_files/figure-latex/Figure5-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure5-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure5-1.png  used on 
-input line 538.
+input line 545.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -894,10 +894,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <ACF.jpg, id=178, 433.62pt x 361.35pt>
 File: ACF.jpg Graphic file (type jpg)
 <use ACF.jpg>
-Package pdftex.def Info: ACF.jpg  used on input line 617.
+Package pdftex.def Info: ACF.jpg  used on input line 615.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
-Underfull \hbox (badness 4156) in paragraph at lines 617--625
+Underfull \hbox (badness 4156) in paragraph at lines 615--623
 [][] \T1/lmr/m/n/10.95 To fur-
  []
 
@@ -949,7 +949,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 <Capture.jpg, id=210, 478.78876pt x 451.6875pt>
 File: Capture.jpg Graphic file (type jpg)
 <use Capture.jpg>
-Package pdftex.def Info: Capture.jpg  used on input line 804.
+Package pdftex.def Info: Capture.jpg  used on input line 802.
 (pdftex.def)             Requested size: 478.78758pt x 451.68639pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -971,12 +971,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17 <./Capture.JPG>] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: F6CD7B21113BC593539B3A6DF3BB087A;3155.
+(rerunfilecheck)             Checksum: 36225045328D5A4106770F4AD78A097A;3169.
  ) 
 Here is how much of TeX's memory you used:
  15360 strings out of 480496
- 271775 string characters out of 5897906
- 560637 words of memory out of 5000000
+ 271785 string characters out of 5897906
+ 560643 words of memory out of 5000000
  32713 multiletter control sequences out of 15000+600000
  458428 words of font info for 66 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1004,7 +1004,7 @@ ic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users
 Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
 <c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.
 pfb>
-Output written on replication.pdf (17 pages, 474980 bytes).
+Output written on replication.pdf (17 pages, 474642 bytes).
 PDF statistics:
  317 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams

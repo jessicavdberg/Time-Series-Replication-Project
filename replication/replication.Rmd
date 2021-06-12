@@ -354,8 +354,11 @@ geom_hline(yintercept=0,col="salmon") + theme_bw()
 
 c
 ```
-# Short Term Nominal Interest Rate Response 
+## Short Term Nominal Interest Rate Response 
 
+Figure 3.4 is an exact replication of Peersman (2005) result. 
+
+An oil shock increases interest rates temporarily to counterbalance the inflationary pressure. The demand and supply shock has a positive effect on short-term nominal interest rates with the effect slowly diminishing over time. These results are consistent with literature.
 ```{r Figure5, warning =  FALSE, fig.align = 'center', fig.cap = "Interest Rate Response\\label{Figure5}", fig.height = 5, fig.width = 6, dev = 'png'}
 RESPONSE = "SUS"
 IMPULSE=c("OIL", "YUS", "CPUS", "SUS")
@@ -383,16 +386,9 @@ geom_hline(yintercept=0,col="salmon") + theme_bw()
 
 d
 ```
-Figure 3.5 replicate Peersman (2005) results as Peersman adds no contemporaneous or long-run restrictions on short-term nominal interest rates. An oil shock increases interest rates temporarily to counterbalance the inflationary pressure. The demand and supply shock has a positive effect on short-term nominal interest rates with the effect slowly diminishing over time. These results are consistent with literature. In the next section, I will analyze the effects of the long run restrictions. 
-
-
-
-
-
-
 # Robustness checks 
 
-After revisiting Peersman (2005) paper, I will now apply numerous diagnostic and robustness test to determine whether a four-variable VAR(3) is an accurate representation of the data generating process. I first analyze the optimal lag length for the model. Then I do this and that. 
+After replicating Peersman (2005) paper, I will now apply numerous diagnostic and robustness test to determine whether a four-variable SVAR(3) is an accurate representation of the data generating process. I first analyze the optimal lag length for the model. Then I do this and that. 
 
 ## Optimal lag length
 
