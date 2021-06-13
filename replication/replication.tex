@@ -169,8 +169,7 @@
 
 \begin{frontmatter}  %
 
-\title{What Caused The Early Millenium Slowdown? Evidenece Based on
-Vector Autoregressions}
+\title{Revisiting What Caused The Early Millenium Slowdown}
 
 % Set to FALSE if wanting to remove title (for submission)
 
@@ -187,24 +186,14 @@ Vector Autoregressions}
 \address[Add1]{20190565}
 
 
-\begin{abstract}
-\small{
-Abstract to be written here. The abstract should not be too long and
-should provide the reader with a good understanding what you are writing
-about. Academic papers are not like novels where you keep the reader in
-suspense. To be effective in getting others to read your paper, be as
-open and concise about your findings here as possible. Ideally, upon
-reading your abstract, the reader should feel he / she must read your
-paper in entirety.
-}
-\end{abstract}
 
 \vspace{1cm}
 
 \begin{keyword}
 \footnotesize{
-Multivariate GARCH \sep Kalman Filter \sep Copula \\ \vspace{0.3cm}
-\textit{JEL classification} L250 \sep L100
+Vectorautoregressive process\sep Millenium Slowdown\sep Time Series
+Analysis \\ \vspace{0.3cm}
+\textit{JEL classification} 
 }
 \end{keyword}
 \vspace{0.5cm}
@@ -243,45 +232,40 @@ paper, Peersman (2005) uses a simple four-variable VAR (vector
 autogressive model) and an identification based scheme based on sign
 restrictions to examine the effects of a supply, demand, monetary policy
 and oil price shocks. Peersman (2005) uses data from the United States
-and Euro area. However, this assignment will only focus on analyzing
-shocks for the USA. Peersman (2005) concludes that the millennial
-slowdown is not the result of one particular shock, but a combination of
-them. The goal of this assignment is to replicate the results of
-Peersman (2005) as well as preform additional robustness test to ensure
-the validity of Peermans (2005) results.
+(US) and Euro area. However, this assignment will only focus on
+analyzing shocks for the US. Peersman (2005) concludes that the
+millennial slowdown is not the result of one particular shock, but a
+combination of them. The goal of this assignment is to replicate the
+results of Peersman (2005) as well as preform additional robustness test
+to ensure the validity of Peermans (2005) results.
 
-\begin{itemize}
-\tightlist
-\item
-  summarize what robustiness checks and analysis you did(including the
-  ones that you replicate)
-\end{itemize}
-
-This paper is structured as follows: The first section will give an
+This paper is structured as follows: The second section will give an
 overview of the paper with respects to the economics, methodology and
-data that Peersman (2005) used. The second section will replicate the
-results for the US. The third section will perform robustness checks and
-the forth section will conclude.
+data that Peersman (2005) used. The third section will replicate the
+impulse response functions for the US, commenting on any difference
+found. The four section will perform several diagnostics and robustness
+checks and the forth section will reach the conclusion that Peersman
+(2005) chose an appropriate model for his analysis.
 
 \hypertarget{overview-of-the-paper}{%
 \section{Overview of the paper}\label{overview-of-the-paper}}
 
-This section gives a brief overview of the economics of Peersman (2005)
-and a critical evaluation of the statistical approach that Peersman
-(2005) choose to analyze possible causes for the economic slowdown of
-the US.
+This section gives a brief overview of the economics of the paper that I
+am replicating as well as a critical evaluation of the statistical
+approach that Peersman (2005) choose to analyze possible causes for the
+economic slowdown of the US.
 
 \hypertarget{theory-of-paper}{%
 \subsection{Theory of Paper}\label{theory-of-paper}}
 
-The 1990s was the start of an economic boom for the United States as
-they experienced the unusual combination of rapid output growth and
-extremely low and stable inflation. From 1994 to 2002 the United States
-real GDP grew by an average annual rate of almost 4 percent while annual
+The 1990s was the start of an economic boom for the United States (US)
+as they experienced the unusual combination of rapid output growth and
+extremely low and stable inflation. From 1994 to 2002 the US real GDP
+grew by an average annual rate of almost 4 percent while annual
 inflation was less than 2 percent. However, by the end of 2001, the US
 began to experience negative growth (Peersman, 2005). Since 2001, the US
-economy has not experienced close to the same economic growth. It is
-therefore important to understand what caused the slowdown.
+economy has not experienced close to the same economic growth as before.
+It is therefore important to understand what caused the slowdown.
 
 The economic expansion that the US experienced made headlines as it was
 the longest expansion in economic history. Many explanations have been
@@ -299,28 +283,30 @@ responds to shocks to the economy to ensure that output, employment, and
 inflation remain stable. The Fed can easily respond to a demand shock as
 it pushed output, employment, and inflation in the same direction.
 Therefore, the Fed will lower interest rate which will increase money
-supply to combat the effects of a demand shock. However, supply shock,
-such as an increase in oil prices, are more complicated to respond. With
-the threat of a recession, the Fed will need to decide whether to
-prioritize inflation stability or employment stability. Which attributed
-the economic boom that the US experienced, is the fact that large supply
-shocks were uncommon during the 1990s.
+supply to combat the effects of a demand shock. However, a supply shock,
+such as an increase in oil prices, are more complicated to respond to.
+With the threat of a recession, the Fed will need to decide whether to
+prioritize inflation stability or employment stability. The fact that
+large supply shocks were uncommon during the 1990s was also a factor
+that greatly influenced the economic boom that the US experienced.
 
-After 10 years of economic growth, the US economy entered a recession.
-The 2001/2002 was relatively short lived. Kliesen (2003) argues that the
-recession was caused by shocks to investment by businesses and
-households and by a decline in real net exports. However, Kleisen (2003)
-does recognize that it can be extremely difficult to challenging to
-discover the root cause of a recession. Understanding fluctuation in the
-growth of an economy has been research by many economists but it is
-still relatively poorly understood. Therefore, Peersman (2005) adds
-value to research by examining four shocks (oil, demand, supply, and
-monetary policy) to analyze the origin of the slowdown.
+After 10 years of economic growth, the US economy entered into a
+recession. The 2001/2002 recession was relatively short lived. Kliesen
+(2003) argues that the recession was caused by shocks to investment by
+businesses and households and by a decline in real net exports. However,
+Kleisen (2003) does recognize that it can be extremely difficult to
+challenging to discover the root cause of a recession. Understanding
+fluctuation that effect the growth of an economy has been researched by
+many economists but it is still relatively poorly understood. Therefore,
+Peersman (2005) adds value to existing research by examining four shocks
+(oil, demand, supply, and monetary policy) to analyze the origin of the
+slowdown.
 
 Peersman (2005) concludes that the slowdown of economic growth was
 caused by a combination of several shocks. This conclusion is
 non-surprising and therefore Peersman (2005) main contribution is the
-impressive mathematical and statistical analysis that he performed.
+impressive mathematical and statistical analysis that he performed. This
+analysis is discussed in the next section.
 
 \hypertarget{data-and-methodology}{%
 \subsection{Data and Methodology}\label{data-and-methodology}}
@@ -331,8 +317,11 @@ rate (SUS) as well as data on the oil price (OIL). Changes in CPUS
 record the rate of consumer inflation while changes in YUS record output
 growth. The data is then manipulated to display the first difference of
 the log of OIL, YUS and CPUS and these variables are assumed to be I(1)
-variables. The SUS variable is taken as an I(0) variable (Ouliaris,
-Pagan \& Restrepo, 2018). The data is presented in figure 2.1 below.
+variables. A I(1) variables means that orginally the data is
+non-stationary, but now that it has been differenced and demeaned, the
+data is stationary. The SUS variable is taken as an I(0) variable
+(Ouliaris, Pagan \& Restrepo, 2018). The data is presented in figure 2.1
+below.
 
 \begin{figure}[H]
 
@@ -345,15 +334,12 @@ Pagan \& Restrepo, 2018). The data is presented in figure 2.1 below.
 
 Peersman (2005) estimates a four-variable constant-coefficient vector
 autoregression (VAR) model, with three lags and identifies four shocks.
-The variables included in the analysis is the first difference of oil
-prices, output growth measured by the real GDP index, consumer inflation
-measured by consumer price index and short-term nominal interest rates.
-The four shocks that are analyzed in this paper; two supply shocks, one
-demand shock and one monetary policy shock. The two supply shocks
+The four shocks that are analyzed in this paper are; two supply shocks,
+one demand shock and one monetary policy shock. The two supply shocks
 represents a shock to the oil price and a shock to output growth. The
-demand shock is associated with a shock to consumer inflation (CPUS),
-while the monetary policy shock is associated with a shock to the short
-term nominal interest rate. Taking the four varaibles and shocks into
+demand shock is associated with a shock to consumer inflation, while the
+monetary policy shock is associated with a shock to the short term
+nominal interest rate. Taking the four variables and shocks into
 account, the equation can be presented as follows:
 
 \[\begin{bmatrix} \Delta oil_t \\ \Delta y_t \\ \Delta p_t \\ s_t \end{bmatrix} = \Biggl[ I - \sum_{i=1}^{n} A_i \Biggl]^{-1} \begin{bmatrix} b_{11}& b_{12}& b_{13} & b_{14} \\
@@ -381,17 +367,18 @@ robustness checks.
 The paper makes use of a traditional identification strategy using a
 combination of short-run and long-run restrictions. Peersman (2005)
 assumes that there is a contemporaneous impact of an oil shock on all
-variables in the VAR, but no immediate impact of other shocks on oil
-prices. This assumption is consistent with previous literature. Further
-Peersman (2005) adds the restrictions that a monetary policy shock has
-no contemporaneous effect on output, since monetary policy shocks have a
-temporary effect on output. To model these contemporaneous effects
-\(b_{12} = b_{13} = b_{14} = b_{24} = 0\). However, to accurately model
-the contempoarous effects, the VAR needs \([k^2-k]/2\) restrictions,
-where k represents the number of variables. This implies that a further
-two restrictions are needed in order to model the VAR successfully,
-which will be long run restrictions. The contemporaneous matrix that
-include only short run restrictions is presented below;
+variables in the structural VAR (SVAR), but no immediate impact of other
+shocks on oil prices. This assumption is consistent with previous
+literature. Further Peersman (2005) adds the restrictions that a
+monetary policy shock has no contemporaneous effect on output, since
+monetary policy shocks have a temporary effect on output. To model these
+contemporaneous effects \(b_{12} = b_{13} = b_{14} = b_{24} = 0\).
+However, to accurately model the contemporaneous effects, the SVAR needs
+\([k^2-k]/2\) restrictions, where k represents the number of variables.
+This implies that a further two restrictions are needed in order to
+model the VAR successfully, which will be long run restrictions. The
+contemporaneous matrix that include only short run restrictions is
+presented below;
 
 \[\ \begin{bmatrix} b_{11}& 0 & 0 & 0 \\
 b_{21}& b_{22}& b_{23} & 0 \\
@@ -411,17 +398,17 @@ represented as follow;
 *& *& *& * \\
 *& *& * & * \end{bmatrix} \]
 
-where the zero's represent restrictions. In the next section I present
-and evaluate impulse response functions that are correlated with the VAR
-specified by Peersman (2005).
+where the zero's represent the restrictions. In the next section, I
+replicate and evaluate the impulse response functions that are
+correlated with the VAR specified by Peersman (2005).
 
 \hypertarget{replication}{%
 \section{Replication}\label{replication}}
 
 In this section, I use Peersman (2005) data on the US to evaluate the
-VAR by plotting impulse response function, 40 periods ahead, with an
+SVAR by plotting impulse response function, 40 periods ahead, with an
 84th and 16th percent confidence band. In Peersman (2005) paper, he
-applies four short run restrictions to his VAR and two long-run
+applies four short run restrictions to his SVAR and two long-run
 restrictions, adding up to the necessary 6 restrictions that is needed
 for the evaluation. In this section, I examine each variables response
 to the different shocks and compare them to Peersman (2005) results
@@ -445,8 +432,8 @@ important to understand how the oil price will respond to different
 types of shocks. Figure 3.1 shows that there is a permanent effect on
 the price of oil for all shocks. The oil price increases after a
 positive demand shock and decrease for a restrictive monetary policy
-shock. A positive oil shock increases the price of oil. These results
-coincides with Peersman (2005) results.
+shock. A positive oil shock increases the price of oil. These impulse
+response functions replicate Peersman (2005) results.
 
 There is also a permanent effect on the price of oil for a supply shock,
 which contradicts Peersman (2005) results as he found only a temporary
@@ -502,12 +489,12 @@ Response}\label{consumer-expenditure-index-response}}
 
 Figure 3.3 shows the response of consumer inflation to all four shocks.
 These results are identical to Peersman (2005) results except for the
-effect of a monetary policy shock on consumer prices. An oil shock and a
+effect of a monetary policy shock on inflation. An oil shock and a
 demand shock has a strong, positive, long run effect on consumer prices.
 This makes theoretical sense, a demand shock insinuates that consumers
 want to consumer more, hence they are willing to pay more and therefore
-consumer prices increases. Furthermore, Gao, Kim, and Saba (2014) found
-a positive effect of an oil price shock on total CPI which in mainly
+inflation increases. Furthermore, Gao, Kim, and Saba (2014) found a
+positive effect of an oil price shock on total CPI which in mainly
 attributed to the positive effect on energy intensive CPI. Therefore,
 Goa, Kim and Saba (2014) supports Peersman (2005) results.
 
@@ -533,12 +520,19 @@ negative effect on inflation.
 \subsection{Short Term Nominal Interest Rate
 Response}\label{short-term-nominal-interest-rate-response}}
 
-Figure 3.4 is an exact replication of Peersman (2005) result.
+Figure 3.4 is an exact replication of Peersman (2005) result. All shocks
+have a temporary, positive effect on interest rates. The pass through of
+an oil and demand shock is longer lived than that of a monetary and
+supply shock. An oil shock increases interest rates temporarily to
+counterbalance the inflationary pressure.
 
-An oil shock increases interest rates temporarily to counterbalance the
-inflationary pressure. The demand and supply shock has a positive effect
-on short-term nominal interest rates with the effect slowly diminishing
-over time. These results are consistent with literature.
+The results are consistent with past literature. Gerlach and Smets
+(1995) concluded that a monetary policy shock has a positive effect on
+interest rates. However they found that the interest rates return to
+starting state at a much faster then what is shown in figure 3.4.
+Further, they found that interest rates increase after an demand shock
+for the US and and concluded that an positive supply shocks increase the
+return to capital and therefore real interest rates.
 
 \begin{figure}[H]
 
@@ -555,8 +549,12 @@ over time. These results are consistent with literature.
 After replicating Peersman (2005) paper, I will now apply numerous
 diagnostic and robustness test to determine whether a four-variable
 SVAR(3) is an accurate representation of the data generating process. I
-first analyze the optimal lag length for the model. Then I do this and
-that.
+first analyze the optimal lag length for the model and then critically
+test for stationarity. I will first test for the optimal lag length and
+then preform several test to determine whether the variables are
+stationary. After, I preform three diagnostic test on residuals which is
+followed by a granger causality test. Lastly, I evaluate and plot the
+forecast error variance decomposition.
 
 \hypertarget{optimal-lag-length}{%
 \subsection{Optimal lag length}\label{optimal-lag-length}}
@@ -564,18 +562,17 @@ that.
 Estimating a lag length for a VAR time series model is a critical
 econometric exercise as one runs the risk of over or under estimation
 (Liew, 2004). The model specified in the paper uses a lag length of 3.
-There are four different criteria's that one can analyze to decided on
-an optimal lag length: the Akaike Information Criterion (AIC), the
-Schwarz Criterion (SC), the Hannan Quinn (HQ) and the Final Prediction
-Error (FPE).
+There are four different criteria that one can analyze to decided on an
+optimal lag length: the Akaike Information Criterion (AIC), the Schwarz
+Criterion (SC), the Hannan Quinn (HQ) and the Final Prediction Error
+(FPE).
 
-As can be seen in the table below, Peersman (2005) chose the FPE lag
-criteria to choose on an optimal lag length. The table alwso shows that
-there is a large discrepancy between the VAR(10) selected by the AIC and
-the VAR(1) and VAR(3) selected by the other criterion. This result is
-not unusual as AIC usually chooses a larger number of lags. Therefore,
-it is preferred to not use the AIC criteria when choosing a number a
-lags.
+As can be seen in the table below, Peersman (2005) chooses the FPE lag
+criteria for an optimal lag length. The table also shows that there is a
+large discrepancy between the VAR(10) selected by the AIC and the VAR(1)
+and VAR(3) selected by the other criteria. This result is not unusual as
+AIC usually chooses a larger number of lags. Therefore, it is preferred
+to not use the AIC criteria when choosing a number a lags.
 
 \begin{center}
 \begin{tabular}{ |c|c|c|c| } 
@@ -588,7 +585,7 @@ lags.
 \end{center}
 
 Liew (2004) conducted a study where he critically analyzed which lag
-length criteria should be used to determine the VAR lag length.He
+length criteria should be used to determine the VAR lag length. He
 concluded that AIC and FPE produce the least probability of under
 estimation when compared to the other selection criteria. Since I have
 already argued that AIC is not the best lag length criteria for this VAR
@@ -602,7 +599,7 @@ lag length of three.
 Stationarity is a dominant principle in time series analysis. Stationary
 implies that the statistical properties of a time series variable do not
 change over time. It is important to know whether your variables are
-stationary as many of the econometric test that you reply on require
+stationary as many of the econometric test that you preform require
 variables to be stationary. To analyze whether the data is stationary, I
 plot the autocorrelation function (ACF) for each variable. On the x-axis
 you will have the number of lags and on the y-axis you will have your
@@ -610,16 +607,16 @@ autocorrelation value. If the variable is stationary, the ACF will
 degrade to zero quickly, whereas if they are non-stationary they will
 slowly diminish as the number of lags increase. As seen in figure 4.1
 below, the ACF plot implies that OIL and YUS are stationary variables
-where CPUS and YUS are non-stationary variables.
+where CPUS and SUS are non-stationary variables.
 
 \includegraphics{ACF.jpg} To further investigate the stationarity of the
-dataset, I preform the Augmented Dickey Fuller (ADF)test, with no trend
+dataset, I preform the Augmented Dickey Fuller (ADF) test, with no trend
 since we detrended our variables. The ADF test is a unit root test for
 stationarity. I want to test for a unit root since a unit root can bring
-about an unpredictable result in your time series analysis. The ADF test
-null hypothesis is that there is a unit root present, where the
-alternative hypothesis is that the time series is stationary. The
-results of the ADF test are given in the table below:
+about an unpredictable result in time series analysis. The ADF test null
+hypothesis is that there is a unit root present, where the alternative
+hypothesis is that the time series is stationary. The results of the ADF
+test are given in the table below:
 
 \begin{center}
 \begin{tabular}{ |c|c|c| } 
@@ -638,16 +635,16 @@ From this table, we can reject the null hypothesis of a unit root being
 present for OIL, YUS and CPUS implying that the variables are
 stationary, but we fail to reject the null hypothesis for SUS. The ADF
 test results need to be interpreted with caution since it has a high
-type I error rate. A type I error is the false rejection of the null
-hypothesis. Therefore, I also make use of another unit root test, the
-Phillips-Perron (PP) test.
+probability of a type I error rate. A type I error is the false
+rejection of the null hypothesis. Therefore, I also make use of another
+unit root test, the Phillips-Perron (PP) test.
 
-The PP test corrects for any serial correlation and heteroskedasiticy by
-building onto the ADF results. Although the ADF test are more widely
+The PP test corrects for any serial correlation and heteroskedasticity
+by building onto the ADF results. Although the ADF test are more widely
 used, the PP tests are more robust to general forms of
 heteroskedasticity in the error term. Therefore, it is an appropriate
 statistic to analyze to determine stationarity. The null hypothesis is
-that same as the ADF test, that the time series has a unit root, where
+the same as the ADF test, that the time series has a unit root, where
 the alternative hypothesis would be that the time series is stationary.
 The results for the PP test is displayed in the table below.
 
@@ -672,26 +669,57 @@ and CPUS we reject the null hypothesis of a unit root and concluded that
 the time series variables are stationary, even though the ACF shows
 contradicting results for CPUS.
 
-In all three test preformed reach the same conclusion that SUS is
-non-stationary which is supported by Peersman (2005) results. However,
-Gerlach and Smets (1995) agrue that the nominal rate cannot have a unit
-root when both the real rate and inflation are stationary. Therefore,
-the non-staionary result is not of concern.
+In all three test preformed, the same conclusion is reached regarding
+the status of SUS, which is that it is non-stationary. However, Peersman
+(2005) comes to the same conclusion. Gerlach and Smets (1995) agrue that
+the nominal rate cannot have a unit root when both the real rate and
+inflation are stationary. Therefore, the non-stationary result is not of
+concern.
 
-\hypertarget{test-for-heteroscedascity}{%
-\subsection{Test for heteroscedascity}\label{test-for-heteroscedascity}}
+\hypertarget{diagnostic-test-on-residuals}{%
+\subsection{Diagnostic Test on
+Residuals}\label{diagnostic-test-on-residuals}}
 
-\hypertarget{test-for-cointegration}{%
-\subsection{Test for cointegration}\label{test-for-cointegration}}
+To evaluate the model fit, I preform three diagnostic test on the
+residuals of the model. The first test I preform is a test for white
+noise residuals using the Portmanteau-test, which test for serial
+correlation between errors. The null hypothesis is that the errors are
+white noise, meaning that they are serially uncorrelated and that each
+error has an identical, independent, mean-zero distribution. The
+alternative hypothesis is therefore that the errors are serially
+correlated. I run the Portmanteau-test for 12 lags and obtain a p-value
+equal to 0.573. Therefore, I fail to reject the null hypothesis. This
+means that the variables are a white noise process which supports
+Peersman (2005) use of a VAR(3) model.
 
-We say that two time series are cointegrated if they have similar
-trends. We conduct a cointegration test to assess whether the residuals
-from regressing one series onto another is stationary. The residuals
-will be stationary if the times series are cointegrated. I will use the
-Engle-Granger (EG) test, where the null hypothesis is that no
-cointegration exist.
+For the second diagnostic test I preform a multivariate
+ARCH\footnote{ARCH stands for Autoregressive Conditional Heteroscedasiticity}-Lagrange-Multiplier
+test for heteroscedasticity. The alternative hypothesis is that
+autocorrelation is present in the squared residuals, therefore the null
+hypothesis is the absence of autoregressive conditional
+heteroscedasticity. The p-value is greater then 5 percent, implying that
+there is no heteroscedasticity present. This conclusion supports
+Peersman (2005) choice of a VAR(3) model.
 
-each of which is I(1), are not cointegrated.
+The final diagnostic test on residuals that I preform, is a test for
+structural breaks where I apply a cumulative sum (CUSUM) test. If a
+structural break is present, it could imply that a four variable VAR(3)
+is not the optimal model to use. In figure xx, I plot each variables
+empirical fluctuation process to see whether a structural break is
+present. A structural brake will occur if the fluctuations exceed the 95
+percent confidence band. Studying figure xx, there does not seem to be a
+break in the respective confidence intervals. Therefore, there is no
+enough evidence to disapprove of the use of a four variable VAR(3)
+model.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{replication_files/figure-latex/Figure8-1} 
+
+}
+
+\caption{Test for Structural Break\label{Figure8}}\label{fig:Figure8}
+\end{figure}
 
 \hypertarget{granger-causality}{%
 \subsection{Granger Causality}\label{granger-causality}}
@@ -731,19 +759,76 @@ variables.Therefore, we can derive the following results:
 \item The hypothesis that the short term nominal interest rate does not influence the real GDP index, the consumer expenditure index and the oil price is rejected. This implies that monetary policy greatly affects the US economy and has an affect on the oil price.
 \end{enumerate}
 
-\hypertarget{diagnostic-tests-and-test-statistics}{%
-\section{Diagnostic tests and Test
-statistics}\label{diagnostic-tests-and-test-statistics}}
+\hypertarget{forecast-error-variance-decomposition}{%
+\subsection{Forecast Error Variance
+Decomposition}\label{forecast-error-variance-decomposition}}
 
-The results for diagnostic test for VAR(1), VAR(2) and VAR(3) are
-provided in the table below.
+Now that we have determined that all the variables granger-cause each
+other, we can decompose the variance of the forecast error to determine
+the impact of the contribution from the shocks specified in the
+paper.This is done through using the forecast error variance
+decomposition (FEVD) method.The FEVD plot below displays how important
+shocks are for explaining variation in the variables. It also gives us a
+time analysis of the important of certain shocks. For example, for
+output growth, a monetary shock is not responsible for variation in the
+short term but it does cause longer term fluctuations.
 
-Here you look and interpret all the test to determine whether VAR(1) is
-too restrictive. ARGUE this as part of your robustness test for the
-paper.
+The results displayed in figure 4.2 suggest that oil is largely
+determined by oil shocks Output growth is mostly determined by supply
+shock but monetary policy shock also has a significant influence on
+output growth. Inflation is mostly determined by an oil price shock and
+a demand shock. Interest rates are largely determined by all four shock
+specified in the model, where a supply shock has the most significant
+effect on it and a monetary policy shock has a diminishing effect.
+
+\begin{figure}[H]
+
+{\centering \includegraphics{replication_files/figure-latex/r Figure9-1} 
+
+}
+
+\caption{Forcast error variance decomposition\label{Figure9}}\label{fig:r Figure9}
+\end{figure}
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
+
+This paper sets out to replicates Peersman (2005) results by analyzing
+the same data set from the US and estimating a four-variable VAR(3)
+model considering short run and long run restrictions simultaneously. To
+analyze the model, the impulse response function are graphed taking into
+account four shocks; an oil price, demand, supply and monetary policy
+shock. These shocks area associated with the four variables; oil price,
+consumer inflation, output growth and short term nominal interest rate,
+respectively. I successfully managed to replicate Peersman's results
+except for two impulse response functions. The first being the a supply
+shock to oil and the second being a supply shock to consumer inflation.
+Supply shocks can be challenging to model and interpret since such a
+shock tend to change the output-inflation combination in the economy.
+
+After I replicated Peersman results, I preform numerous robustness test
+to determine whether a four-variable VAR(3) is a sufficient and accurate
+model to estimate. I first analyze the optimal lag length by studying
+four different criteria and conclude that 3 lags is optimal. Secondly, I
+test whether the variables in the data set are stationary by studying
+the autocorrelation function, the augmented dickey fuller test and the
+Philips-Perron test. I concluded that 3 YUS, CPUS and OIL is
+stationarity, however SUS is non stationary. It can be argued
+theoretically that SUS is stationary, therefore the results are not
+concerning. I then preform three diagnostic tests on the residuals on
+the VAR(3) and find no evidence that disproves of the model. Fourthly, I
+prefrom the granger causality test to determine whether variables in the
+model granger-cause eachother. The results were no surprising as
+macroeconomic variables often affect eachother. Lastly, I plot the
+forecast error variance decomposition to accurately analyze which
+variables are affected by which results.
+
+I therefore find no evidence to disprove the four-variable VAR(3) that
+Peersman used in his paper. The results from the robustness checks prove
+that the model is accurate and robust. Peersman correctly specified his
+model taking into account the non-stationarity of one of the variables.
+
+word count {[}4171{]}
 
 \newpage
 
@@ -802,10 +887,6 @@ the US. New Economy, 9(1), pp.57-61.
 \includegraphics{Capture.jpg}
 \caption{Peersman orignial results}
 \end{figure}
-
-\hypertarget{appendix-b}{%
-\subsection*{Appendix B}\label{appendix-b}}
-\addcontentsline{toc}{subsection}{Appendix B}
 
 \bibliography{Tex/ref}
 

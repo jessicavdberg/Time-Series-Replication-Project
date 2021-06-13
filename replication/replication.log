@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  13 JUN 2021 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.6.9)  13 JUN 2021 05:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -727,55 +727,51 @@ LaTeX Info: Redefining \nameref on input line 166.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-11.
+00.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-11.
+00.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-211.
+200.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-211.
+200.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 211.
+(Font)              <9> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 211.
+(Font)              <6> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 211.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 211
+(Font)              <5> on input line 200.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 200
 .
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 211
+LaTeX Font Info:    Trying to load font information for U+msb on input line 200
 .
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-11.
+00.
 (c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 211.
+(Font)              <10.95> on input line 200.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 211.
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-56.
-(c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [1
+(Font)              <8> on input line 200.
+[1
 
 
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdfte
@@ -789,11 +785,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-<replication_files/figure-latex/Figure1-1.png, id=111, 433.62pt x 361.35pt>
+<replication_files/figure-latex/Figure1-1.png, id=103, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure1-1.png  used on 
-input line 339.
+input line 328.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -803,7 +799,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[3]
+[3 <./replication_files/figure-latex/Figure1-1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -812,7 +808,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[4 <./replication_files/figure-latex/Figure1-1.png>]
+[4]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -822,11 +818,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5]
-<replication_files/figure-latex/Figure2-1.png, id=135, 433.62pt x 361.35pt>
+<replication_files/figure-latex/Figure2-1.png, id=130, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure2-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure2-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure2-1.png  used on 
-input line 463.
+input line 450.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -836,21 +832,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[7 <./replication_files/figure-latex/Figure2-1.png>]
-<replication_files/figure-latex/Figure3-1.png, id=152, 433.62pt x 361.35pt>
+[6 <./replication_files/figure-latex/Figure2-1.png>]
+<replication_files/figure-latex/Figure3-1.png, id=138, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure3-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure3-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure3-1.png  used on 
-input line 492.
+input line 479.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -860,18 +847,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[8 <./replication_files/figure-latex/Figure3-1.png>]
-<replication_files/figure-latex/Figure4-1.png, id=160, 433.62pt x 361.35pt>
+[7 <./replication_files/figure-latex/Figure3-1.png>]
+<replication_files/figure-latex/Figure4-1.png, id=147, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure4-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure4-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure4-1.png  used on 
-input line 525.
+input line 512.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
-<replication_files/figure-latex/Figure5-1.png, id=161, 433.62pt x 361.35pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[8 <./replication_files/figure-latex/Figure4-1.png>]
+<replication_files/figure-latex/Figure5-1.png, id=155, 433.62pt x 361.35pt>
 File: replication_files/figure-latex/Figure5-1.png Graphic file (type png)
 <use replication_files/figure-latex/Figure5-1.png>
 Package pdftex.def Info: replication_files/figure-latex/Figure5-1.png  used on 
-input line 545.
+input line 539.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -881,7 +877,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[9 <./replication_files/figure-latex/Figure4-1.png>]
+[9 <./replication_files/figure-latex/Figure5-1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -890,14 +886,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[10 <./replication_files/figure-latex/Figure5-1.png>]
-<ACF.jpg, id=178, 433.62pt x 361.35pt>
+[10]
+<ACF.jpg, id=170, 433.62pt x 361.35pt>
 File: ACF.jpg Graphic file (type jpg)
 <use ACF.jpg>
-Package pdftex.def Info: ACF.jpg  used on input line 615.
+Package pdftex.def Info: ACF.jpg  used on input line 612.
 (pdftex.def)             Requested size: 433.61894pt x 361.34912pt.
 
-Underfull \hbox (badness 4156) in paragraph at lines 615--623
+Underfull \hbox (badness 4156) in paragraph at lines 612--620
 [][] \T1/lmr/m/n/10.95 To fur-
  []
 
@@ -909,7 +905,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
+[11 <./ACF.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -918,7 +914,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[12 <./ACF.jpg>]
+[12]
+<replication_files/figure-latex/Figure8-1.png, id=181, 433.62pt x 433.62pt>
+File: replication_files/figure-latex/Figure8-1.png Graphic file (type png)
+<use replication_files/figure-latex/Figure8-1.png>
+Package pdftex.def Info: replication_files/figure-latex/Figure8-1.png  used on 
+input line 717.
+(pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -936,7 +938,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[14]
+[14 <./replication_files/figure-latex/Figure8-1.png>]
+<replication_files/figure-latex/r Figure9-1.png, id=195, 433.62pt x 433.62pt>
+File: replication_files/figure-latex/r Figure9-1.png Graphic file (type png)
+<use replication_files/figure-latex/r Figure9-1.png>
+Package pdftex.def Info: replication_files/figure-latex/r Figure9-1.png  used o
+n input line 786.
+(pdftex.def)             Requested size: 433.61894pt x 433.61894pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -946,10 +954,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [15]
-<Capture.jpg, id=210, 478.78876pt x 451.6875pt>
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16 <./replication_files/figure-latex/r Figure9-1.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
+<Capture.jpg, id=216, 478.78876pt x 451.6875pt>
 File: Capture.jpg Graphic file (type jpg)
 <use Capture.jpg>
-Package pdftex.def Info: Capture.jpg  used on input line 802.
+Package pdftex.def Info: Capture.jpg  used on input line 887.
 (pdftex.def)             Requested size: 478.78758pt x 451.68639pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -959,7 +985,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16]
+[18]
 No file replication.bbl.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -969,45 +995,44 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[17 <./Capture.JPG>] (./replication.aux)
+[19 <./Capture.JPG>] (./replication.aux)
 Package rerunfilecheck Info: File `replication.out' has not changed.
-(rerunfilecheck)             Checksum: 36225045328D5A4106770F4AD78A097A;3169.
+(rerunfilecheck)             Checksum: BB164C8E37A26C95D00CC99FBF91225F;2921.
  ) 
 Here is how much of TeX's memory you used:
- 15360 strings out of 480496
- 271785 string characters out of 5897906
- 560643 words of memory out of 5000000
- 32713 multiletter control sequences out of 15000+600000
- 458428 words of font info for 66 fonts, out of 8000000 for 9000
+ 15349 strings out of 480496
+ 271903 string characters out of 5897906
+ 559822 words of memory out of 5000000
+ 32703 multiletter control sequences out of 15000+600000
+ 455073 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,80p,353b,781s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,12n,80p,353b,821s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
 nc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mat
 hsy.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
 m-rm.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/
 lm-mathit.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvip
-s/lm/lm-mathex.enc}{c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
-/dvips/lm/lm-ts1.enc}<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/t
-ype1/public/lm/lmbx10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmex10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-di
-st/fonts/type1/public/lm/lmmi10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/tex
-mf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX
-/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/jesic/AppData/Roaming/Tin
-yTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/jesic/AppData/Roaming
-/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/jesic/AppData/Roam
-ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/R
-oaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/jesic/AppDat
-a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/jesic/A
-ppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/Users/jes
-ic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users
-/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/
-Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.
-pfb>
-Output written on replication.pdf (17 pages, 474642 bytes).
+s/lm/lm-mathex.enc}<c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
+e1/public/lm/lmbx10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/font
+s/type1/public/lm/lmex10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist
+/fonts/type1/public/lm/lmmi10.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/texmf
+-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/jesic/AppData/Roaming/TinyTeX/t
+exmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/jesic/AppData/Roaming/TinyT
+eX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/jesic/AppData/Roaming/T
+inyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/jesic/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/jesic/AppData/Roa
+ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/Users/jesic/AppData/
+Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/Users/jesic/App
+Data/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb><c:/Users/jesic
+/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/Users/j
+esic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Us
+ers/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c
+:/Users/jesic/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt9.pf
+b>
+Output written on replication.pdf (19 pages, 489816 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
+ 322 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 named destinations out of 1000 (max. 500000)
+ 198 words of extra memory for PDF output out of 10000 (max. 10000000)
 
